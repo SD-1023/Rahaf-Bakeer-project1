@@ -30,8 +30,9 @@ body {
 
   height: fit-content;
   height: 100vh;
-  height: 95px;
+  height: 5.9rem;
   width: 90vw;
+  padding-top: 30px;
 }
 
 .div-search-inputs {
@@ -45,7 +46,6 @@ body {
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
   border-radius: 10px;
   box-shadow: 0px 0px 3px 2px var(--light-mode-lines-color);
 }
@@ -180,7 +180,7 @@ select:focus-visible {
 
 .div-single-topic {
   width: 250px;
-  height: 280px;
+  height: 305px;
   background-color: var(--light-mode-bg_default);
   border-radius: 10px;
 }
@@ -201,6 +201,7 @@ select:focus-visible {
 
 .h5-disc-single-topic {
   font-weight: 400;
+  font-size: 16px;
 }
 
 .h3-title-single-topic {
@@ -208,7 +209,11 @@ select:focus-visible {
 }
 
 .div-rating-single-topic {
-  margin-top: 25px;
+  margin-top: 20px;
+}
+
+.div-fav-rating-single-topic,
+.div-rating-single-topic {
   color: orange;
 }
 

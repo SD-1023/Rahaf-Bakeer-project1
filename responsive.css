@@ -25,7 +25,8 @@
     clip-path: polygon(0% 0%, 100% 40%, 100% 0%);
   }
 
-  .div-search-inputs {
+  .div-search-inputs,
+  .iframe-serchbar {
     height: 95px !important;
   }
 
@@ -90,12 +91,17 @@
   .div-info-single-topic {
     height: 100px;
     position: absolute;
-    bottom: 10px;
+    bottom: 35px;
     left: 0;
     width: 100%;
   }
 
   .div-info-single-topic > * {
     margin-left: 10px;
+  }
+
+  .fav-section {
+    width: fit-content;
+    height: 100%;
   }
 }
