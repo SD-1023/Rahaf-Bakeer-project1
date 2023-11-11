@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: var(--font-family-Nunito-Sans);
+}
+
+.website-main-header {
+  display: flex;
+  height: 75px;
+  margin-left: 60px;
+  margin-right: 60px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  position: sticky;
+}
+
+.header-flex-nav-href {
+  display: flex;
+  width: fit-content;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: center;
+}
+
+.header-title-heading {
+  color: var(--brand-primary);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-href {
+  display: inline-block;
+  line-height: 35px;
+  border-color: var(--light-mode-lines-color);
+  border-width: thin;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 1px 10px;
+  width: fit-content;
+}
+
+.header-href > * {
+  vertical-align: middle;
+  display: inline-block;
+  line-height: normal;
+}
+
+.header-href-span-text {
+  color: var(--light-mode-body-text);
+  font-weight: 400;
+  margin-left: 5px;
+  font-size: 15px;
+}
+
+.header-icon-href {
+  width: 20px;
+}
+
+.section-welcome {
+  margin-bottom: 20px;
+}
+
+.section-welcome-div-triangles {
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid transparent;
+}
+
+.div-triangle-left,
+.div-triangle-right {
+  top: 0;
+  position: absolute;
+}
+
+.div-triangle-right {
+  left: 0;
+  left: 0;
+  width: 90vw;
+  height: 92.6px;
+  background-image: linear-gradient(
+    to right top,
+    var(--brand-primary) 55%,
+    var(--brand-secondary)
+  );
+  clip-path: polygon(0% 0, 100% 0%, 0 60%);
+}
+
+.div-triangle-left {
+  right: 0;
+  width: 90vw;
+  height: 92.6px;
+  background-color: var(--brand-secondary);
+  clip-path: polygon(0% 0%, 100% 60%, 100% 0%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.section-welcome-div-text {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.8rem;
+}
+
+.h1-heading-welcome-text {
+  color: var(--brand-secondary);
+  font-weight: 700;
+}
+
+.h3-heading-welcome-text {
+  color: var(--light-mode-body-text);
+  font-weight: 400;
+}
+
+.sectionPageContent {
+  background-color: var(--light-mode-bg_body);
+  height: 100%;
+}
+
+
+.iframe-content-section-display {
+  height: 100vw;
+}
+
+iframe {
+  border: none;
+  width: 100%;
+  display: block;
+}
+
+.section-footer {
+  height: 300px;
+  width: 100%;
+}

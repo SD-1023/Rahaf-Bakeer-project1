@@ -1,0 +1,66 @@
+@media (max-width: 600px) {
+  .header-href {
+    padding: 1px 1rem;
+  }
+
+  .header-href-span-text {
+    display: none;
+  }
+
+  .website-main-header {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
+  .section-welcome-div-text {
+    margin-top: 2.5rem;
+    margin-left: 1.5rem;
+  }
+
+  .div-triangle-right {
+    clip-path: polygon(0% 0, 100% 0%, 0 40%);
+  }
+
+  .div-triangle-left {
+    clip-path: polygon(0% 0%, 100% 40%, 100% 0%);
+  }
+
+  .div-search-inputs {
+    height: 95px !important;
+  }
+
+  .srch-bar-sec-input,
+  .srch-bar-three-input {
+    width: 50% !important;
+  }
+
+  .first-input-form {
+    width: 100% !important;
+  }
+
+  .search-bar {
+    border-radius: 10px 10px 0 0 !important;
+  }
+
+  #filter-selector-serch-bar {
+    border-radius: 0 0 10px 0;
+  }
+
+  #sort-selector-serch-bar {
+    border-radius: 0 0 0 10px;
+  }
+
+  .div-dividing-hide {
+    display: none;
+  }
+
+  .div-hr-dividing {
+    display: block !important;
+    width: 100%;
+    border-bottom: 2px solid var(--light-mode-lines-color);
+  }
+
+  .iframe-serchbar {
+    height: 150px !important;
+  }
+}

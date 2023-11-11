@@ -1,0 +1,27 @@
+:root {
+    --brand-primary: #0768AC;
+    --brand-secondary: #03C180;
+    --heart-color: #DC143C;
+    
+    --light-mode-bg_default: #FFFFFF;
+    --light-mode-bg_body: #F0F9FF;
+    --light-mode-lines-color: #DDDDDD;
+    --light-mode-body-text: #333333;
+    
+
+    
+    
+    --dark-mode-bg_default: #1A1A1A;
+    --dark-mode-bg_body: #282828;
+    --dark-mode-lines-color: #000000;
+    --dark-mode-body-text: #EDEDED;
+    
+
+
+
+    --font-family-Nunito-Sans: 'Nunito Sans', sans-serif;
+   
+
+
+
+}
