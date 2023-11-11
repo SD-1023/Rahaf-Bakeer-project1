@@ -142,7 +142,28 @@ iframe {
   display: block;
 }
 
-.section-footer {
-  height: 300px;
+.iframe-footer {
+  height: 75px;
   width: 100%;
 }
+.section-footer {
+  height: 75px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  gap:5px;
+}
+
+.footer-img-heart-icon{
+  width: 25px;
+}
+
+
+ion-icon {
+  font-size: 25px;
+  color:var(--heart-color);
+}
+
+
+
