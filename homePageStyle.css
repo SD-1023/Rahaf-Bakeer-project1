@@ -14,7 +14,7 @@ body {
 
 .section-homePage {
   height: fit-content;
-  width: fit-content;
+  width: 90vw;
   margin-left: auto;
   margin-right: auto;
 }
@@ -166,30 +166,37 @@ select:focus-visible {
 }
 
 .section-flex-topics {
-  width: 90vw;
+  width: fit-content;
   height: 100%;
   display: flex;
   margin-top: 30px;
   flex-direction: row;
   flex-wrap: wrap;
+  row-gap: 30px;
+  column-gap: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .div-single-topic {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 280px;
   background-color: var(--light-mode-bg_default);
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .img-single-topic {
   width: 100%;
+  height: 150px;
+  border-radius: 10px 10px 0 0;
 }
 
 .div-info-single-topic {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 15px;
+  margin-top: 20px;
+  background-color: var(--light-mode-bg_default);
 }
 
 .h5-disc-single-topic {
@@ -201,11 +208,11 @@ select:focus-visible {
 }
 
 .div-rating-single-topic {
-  margin-top: 20px;
+  margin-top: 25px;
   color: orange;
 }
 
 .h5-author-single-topics {
-  margin-top: 10px;
+  margin-top: 12px;
   font-weight: 200;
 }

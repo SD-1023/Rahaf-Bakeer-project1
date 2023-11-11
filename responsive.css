@@ -63,4 +63,39 @@
   .iframe-serchbar {
     height: 150px !important;
   }
+
+  .section-flex-topics {
+    justify-content: center;
+  }
+
+  .div-single-topic {
+    width: 100%;
+  }
+
+  .div-single-topic {
+    position: relative;
+  }
+
+  .img-single-topic {
+    position: absolute;
+    height: 150px;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .div-info-single-topic {
+    height: 100px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+  }
+
+  .div-info-single-topic > * {
+    margin-left: 10px;
+  }
 }

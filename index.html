@@ -8,56 +8,35 @@
         </title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" type="text/css" href="variables.css">
+        <link rel="stylesheet" type="text/css" href="homePageStyle.css">
         <link rel="stylesheet" type="text/css" href="responsive.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
             href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,400;6..12,700&display=swap"
             rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-    <body id="index-main-body">
-        <header class="website-main-header">
-            <h4 class="header-title-heading">Web Topics</h4>
-            <nav class="header-flex-nav-href">
-                <a class="header-href" id="header-href-dark-mood" href="#"> <img
-                        class="header-icon-href"
-                        src="./assets/icons/moon-icon.svg"> <span
-                        class="header-href-span-text"
-                        id="header-href-span-text-mood">Dark Mode</span> </a>
-                <a class="header-href" id="header-href-fav" href="#"
-                    onclick="loadPage('favorite')"> <img
-                        class="header-icon-href"
-                        src="./assets/icons/heart-icon.svg"> <span
-                        class="header-href-span-text"
-                        id="header-href-span-text-fav">Favorites</span></a>
-            </nav>
-        </header>
-
-        <section class="section-welcome">
-            <div class="section-welcome-div-triangles">
-
-                <div class="div-triangle-left">
-                </div>
-                <div class="div-triangle-right">
-                </div>
-            </div>
-            <div class="section-welcome-div-text">
-                <h1 class="h1-heading-welcome-text">
-                    Welcome to our website!
-                </h1>
-                <h3 class="h3-heading-welcome-text">
-                    We have a new design that's fresh, modern, and easy to use.
-                </h3>
-            </div>
-        </section>
+    <body>
 
         <section id="pageContent" class="sectionPageContent">
-            <iframe id="obj-content-section" class="obj-content-section-display"
-                type="text/html" data="homePage.html"></iframe>
+
+            <section class="section-homePage ">
+
+                <iframe class="iframe-serchbar" src="searchBar.html"></iframe>
+
+                <h1 class="h1-topics-title-home-page">"24" Web Topics Found</h1>
+
+                <section id="section-load-topics" class="section-flex-topics">
+
+                </section>
+            </section>
+            <section class="section-footer"></section>
         </section>
 
-        <section class="section-footer"></section>
-
+        <script src="script.js">
+        </script>
     </body>
 
 </html>
