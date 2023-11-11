@@ -313,14 +313,14 @@ for (let i = 0; i < topicsData.length; i++) {
   topicDescription.appendChild(
     document.createTextNode(topicsData[i]["description"])
   );
-  
+
   infoContainer.appendChild(topicDescription);
   topicTitle.appendChild(document.createTextNode(topicsData[i]["title"]));
-  infoContainer.appendChild(topicDescription);
+  infoContainer.appendChild(topicTitle);
 
   for (let j = 0; j < topicsData[i]["rating"]; j++) {
     let starRating = document.createElement("i");
-    starRating.className = "fa fa-star";
+    starRating.className = "fa  fa-star";
     topicRatingContainer.appendChild(starRating);
   }
 
@@ -335,5 +335,22 @@ for (let i = 0; i < topicsData.length; i++) {
   infoContainer.appendChild(topicAuthor);
   newTopicElement.appendChild(infoContainer);
   section.appendChild(newTopicElement);
-
 }
+
+var container = document.getElementById("iframe-fav-container");
+
+window.addEventListener("message", function (event) {
+  if (event.data === "favoritesStatus") {
+    if (
+      !localStorage.getItem("favDisplay") ||
+      localStorage.getItem("favDisplay") === "none"
+    ) {
+      container.style.display = "none";
+    } else {
+      document
+        .getElementById("iframe-fav-container")
+        .contentWindow.postMessage("favoritesStatus", "*");
+      container.style.display = "block";
+    }
+  }
+});
