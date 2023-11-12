@@ -284,14 +284,14 @@ for (let i = 0; i < topicsData.length; i++) {
   let infoContainer = document.createElement("div");
   infoContainer.className = "div-info-single-topic";
   let topicDescription = document.createElement("h5");
-  topicDescription.className = "h5-disc-single-topic";
+  topicDescription.className = "h5-disc-single-topic text-color-mood-change";
   let topicTitle = document.createElement("h3");
-  topicTitle.className = "h3-title-single-topic";
+  topicTitle.className = "h3-title-single-topic text-color-mood-change";
   let topicRatingContainer = document.createElement("div");
   topicRatingContainer.className = "div-rating-single-topic";
 
   let topicAuthor = document.createElement("h5");
-  topicAuthor.className = "h5-author-single-topics";
+  topicAuthor.className = "h5-author-single-topics text-color-mood-change";
 
   newTopicElement.id =
     "div-single-topic" + topicsData[i]["title"].split(" ")[0];
@@ -331,11 +331,25 @@ for (let i = 0; i < topicsData.length; i++) {
   }
 
   infoContainer.appendChild(topicRatingContainer);
-  topicAuthor.appendChild(document.createTextNode(topicsData[i]["author"]));
+  topicAuthor.appendChild(document.createTextNode("Author: "+topicsData[i]["author"]));
   infoContainer.appendChild(topicAuthor);
   newTopicElement.appendChild(infoContainer);
   section.appendChild(newTopicElement);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 var container = document.getElementById("iframe-fav-container");
 
@@ -353,4 +367,93 @@ window.addEventListener("message", function (event) {
       container.style.display = "block";
     }
   }
+
+  if (event.data === "colorMoodChange"){
+    setTimeout(() => {
+     
+    let backgroundDarkColor = "var( --dark-mode-bg_default)";
+  let backgroundLightColor = "var( --light-mode-bg_default)";
+  let textLightColor="var(  --light-mode-body-text)";
+  let textDarkColor="var( --dark-mode-body-text)";
+  
+  let ElementClassNameToChangeColor = [
+    "iframe-main-header",
+  
+    "div-single-topic",
+    "div-info-single-topic"
+  ];
+
+
+  let textClassNameToChangeColor=this.document.getElementsByClassName("text-color-mood-change");
+
+  if (
+    !localStorage.getItem("colorMood") ||
+    localStorage.getItem("colorMood") === "light"
+  ) {
+    this.document.getElementById("pageContent").style.backgroundColor="var(--light-mode-bg_body)";
+    for (let i = 0; i < ElementClassNameToChangeColor.length; i++) {
+      element= document.getElementsByClassName(
+        ElementClassNameToChangeColor[i]
+      );
+      for (let j=0;j<element.length;j++){
+       element[j].style.backgroundColor = backgroundLightColor;
+      }
+    
+    }
+
+    for(let t=0;t<textClassNameToChangeColor.length;t++){
+      
+      textElement= document.getElementsByClassName(
+        textClassNameToChangeColor[t]
+      );
+      for (let j=0;j<textElement.length;j++){
+        textElement[j].style.color = textLightColor;
+       }
+
+
+    }
+
+  
+
+
+  } else {
+    this.document.getElementById("pageContent").style.backgroundColor="var( --dark-mode-bg_body)";
+
+    for (let i = 0; i < ElementClassNameToChangeColor.length; i++) {
+      
+      element= document.getElementsByClassName(
+        ElementClassNameToChangeColor[i]
+      );
+      for (let j=0;j<element.length;j++){
+       element[j].style.backgroundColor =backgroundDarkColor
+      }
+    
+    }
+
+    // const iframe = document.getElementById('iframe-search-bar-content');
+
+    // iframe.contentWindow.postMessage("colorChange","*");
+    for(let t=0;t<textClassNameToChangeColor.length;t++){
+      
+      textElement= document.getElementsByClassName(
+        textClassNameToChangeColor[t]
+      );
+      for (let j=0;j<textElement.length;j++){
+        textElement[j].style.color = textDarkColor;
+       }
+
+
+    }  
+  }
+},0);
+
+  const iframe = document.getElementById('iframe-search-bar-content');
+
+  iframe.contentWindow.postMessage("colorChange","*");
+  }
+
+
 });
+
+
+

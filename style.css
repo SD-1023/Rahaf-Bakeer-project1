@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: var(--font-family-Nunito-Sans);
+  
 }
 
 .website-main-header {
@@ -14,9 +15,15 @@ body {
   position: sticky;
 }
 
+.text-color-mood-change{
+  color: var(--light-mode-body-text);
+}
+.iframe-main-header,.website-main-header,.fav-section,.header-href{
+  background-color:var(--light-mode-bg_default);
+
+}
 .iframe-main-header {
   height: 12.5rem;
-  margin-bottom: 20px;
 }
 
 .header-flex-nav-href {
@@ -55,8 +62,8 @@ a {
 }
 
 .header-href-span-text {
-  color: var(--light-mode-body-text);
-  font-weight: 400;
+  
+  font-weight: 700;
   margin-left: 5px;
   font-size: 15px;
 }
@@ -121,7 +128,7 @@ h6 {
 }
 
 .h3-heading-welcome-text {
-  color: var(--light-mode-body-text);
+  
   font-weight: 400;
 }
 
@@ -176,8 +183,6 @@ ion-icon {
 .fav-section{
   height: 200px;
   width: 100%;
-  background-color:var(--light-mode-bg_default);
-
 }
 
 .div-fav-topic{
@@ -220,8 +225,22 @@ ion-icon {
 
 .div-fav-topic-info{
   margin-left: 10px;
+  overflow: hidden;
+  margin-right: 10px;
 }
 
 .fav-topic-name{
   font-size: 18px;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.span-text-footer,.span-copy-footer,.span-year-footer{
+  font-weight: 700;
+}
+
+.span-copy-footer{
+  font-size: 20px;
 }
