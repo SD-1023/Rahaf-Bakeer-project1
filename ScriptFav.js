@@ -1,6 +1,3 @@
-
-
-
 let favData = [
   {
     imgSrc: "./assets/imges/react.webp",
@@ -30,6 +27,7 @@ for (let i = 0; i < favData.length; i++) {
   topicRatingContainer.className = "div-fav-rating-single-topic";
 
   topicImg.src = favData[i]["imgSrc"];
+  topicImg.alt = "topic img";
   newTopicElement.appendChild(topicImg);
 
   topicTitle.appendChild(document.createTextNode(favData[i]["title"]));
@@ -52,7 +50,4 @@ for (let i = 0; i < favData.length; i++) {
   divFav.appendChild(newTopicElement);
 }
 
-
-window.addEventListener("message", function (event) {
-  
-});
+window.addEventListener("message", function (event) {});

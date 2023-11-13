@@ -23,10 +23,6 @@ body {
   padding-right: 16px;
 }
 
-.text-color-mood-change{
-  color: var(--light-mode-body-text);
-}
-
 /*****Search Bar Style******/
 
 .iframe-serchbar {
@@ -42,7 +38,7 @@ body {
 .div-search-inputs {
   margin-top: 3px;
   height: 48px;
-border-radius:10px;
+  border-radius: 10px;
   width: 99.5%;
   display: flex;
   gap: 0;
@@ -56,7 +52,7 @@ border-radius:10px;
 }
 
 .srch-bar-icon {
-  width: 20px;
+  font-size: 20px;
   position: absolute;
   margin-top: 13px;
   margin-left: 10px;
@@ -78,8 +74,12 @@ select:focus-visible {
   height: 46px;
 }
 
-.search-bar,.selector-serch-bar,.div-single-topic,.div-info-single-topic,.img-single-topic{
-  background-color:var(--light-mode-bg_default);
+.search-bar,
+.selector-serch-bar,
+.div-single-topic,
+.div-info-single-topic,
+.img-single-topic {
+  background-color: var(--light-mode-bg_default);
 }
 .search-bar {
   padding: 0;
@@ -103,7 +103,6 @@ select:focus-visible {
 .div-select-label-container {
   position: relative;
   display: inline-block;
- 
 }
 
 .selector-serch-bar {
@@ -187,7 +186,7 @@ select:focus-visible {
 
 .div-single-topic {
   width: 250px;
-  height: 305px;
+  height: 315px;
   border-radius: 10px;
 }
 
@@ -203,18 +202,21 @@ select:focus-visible {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 .h5-disc-single-topic {
   font-weight: 400;
   font-size: 14px;
-  white-space: nowrap; 
-  overflow: hidden; 
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .h3-title-single-topic {
   font-weight: 700;
+  font-size: 1em;
+  height: 33px;
 }
 
 .div-rating-single-topic {

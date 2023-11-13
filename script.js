@@ -113,161 +113,161 @@ topicsData = [
   },
   {
     imgSrc: "./assets/imges/oauth.png",
-    description: "Web Development Concepts and T...",
+    description: "Web Development Concepts and Technology",
     title: "OAuth",
     rating: "4",
     author: "Evelyn Nguyen",
   },
   {
     imgSrc: "./assets/imges/json.png",
-    description: "Web Development Concepts and T...",
+    description: "Web Development Concepts and Technology",
     title: "JSON",
     rating: "4",
     author: "Liam Hernandez",
   },
   {
     imgSrc: "./assets/imges/ajax.gif",
-    description: "Web Development Concepts and T...",
+    description: "Web Development Concepts and Technology",
     title: "AJAX",
     rating: "3",
     author: "Avery Perez",
   },
   {
     imgSrc: "./assets/imges/websockets.png",
-    description: "Web Development Concepts and T...",
+    description: "Web Development Concepts and Technology",
     title: "WebSockets",
     rating: "4",
     author: "Victoria Kim",
   },
   {
     imgSrc: "./assets/imges/responsive.gif",
-    description: "Web Development Concepts and T...",
+    description: "Web Development Concepts and Technology",
     title: "Responsive Design",
     rating: "4",
     author: "Ryan Jones",
   },
   {
     imgSrc: "./assets/imges/accessibility.png",
-    description: "Web Development Concepts and T...",
+    description: "Web Development Concepts and Technology",
     title: "Accessibility",
     rating: "4",
     author: "Samantha Martin",
   },
   {
     imgSrc: "./assets/imges/ux.jpeg",
-    description: "Web Development Concepts and T...",
+    description: "Web Development Concepts and Technology",
     title: "User Experience (UX)",
     rating: "4",
     author: "Luke Davis",
   },
   {
     imgSrc: "./assets/imges/ui.png",
-    description: "Web Development Concepts and T...",
+    description: "Web Development Concepts and Technology",
     title: "User Interface (UI)",
     rating: "3",
     author: "Grace Wilson",
   },
   {
     imgSrc: "./assets/imges/design-systems.jpeg",
-    description: "Web Development Concepts and T...",
+    description: "Web Development Concepts and Technology",
     title: "Design System",
     rating: "4",
     author: "Noah Martinez",
   },
   {
     imgSrc: "./assets/imges/performance.png",
-    description: "Web Development Concepts and T...",
+    description: "Web Development Concepts and Technology",
     title: "Performance Optimization",
     rating: "",
     author: "Chloe Taylor",
   },
   {
     imgSrc: "./assets/imges/cross-browser.jpeg",
-    description: "Web Development Concepts and T...",
+    description: "Web Development Concepts and Technology",
     title: "Cross-Browser Compatibility",
     rating: "4",
     author: "David Lee",
   },
   {
     imgSrc: "./assets/imges/seo.jpeg",
-    description: "Web Development Concepts and T...",
+    description: "Web Development Concepts and Technology",
     title: "Search Engine Optimization",
     rating: "4",
     author: "Emily Kim",
   },
   {
     imgSrc: "./assets/imges/web-security.jpeg",
-    description: "Web Development Concepts and T...",
+    description: "Web Development Concepts and Technology",
     title: "Web Security",
     rating: "4",
     author: "Gabriel Hernandez",
   },
   {
     imgSrc: "./assets/imges/testing.jpeg",
-    description: "Web Development Concepts and T...",
+    description: "Web Development Concepts and Technology",
     title: "Testing and Debugging",
     rating: "4",
     author: "Avery Perez",
   },
   {
     imgSrc: "./assets/imges/ci-cd.jpeg",
-    description: "Web Development Concepts and T...",
+    description: "Web Development Concepts and Technology",
     title: "Continuous Integration/Continuous...",
     rating: "4",
     author: "Madison Davis",
   },
   {
     imgSrc: "./assets/imges/devops.png",
-    description: "Web Development Concepts and T...",
+    description: "Web Development Concepts and Technology",
     title: "DevOps",
     rating: "4",
     author: "Isabella Wilson",
   },
   {
     imgSrc: "./assets/imges/cloud.jpeg",
-    description: "Web Development Concepts and T...",
+    description: "Web Development Concepts and Technology",
     title: "Cloud Computing",
     rating: "4",
     author: "Jacob Garcia",
   },
   {
     imgSrc: "./assets/imges/docker.png",
-    description: "Web Development Concepts and T...",
+    description: "Web Development Concepts and Technology",
     title: "Docker",
     rating: "4",
     author: "Mia Brown",
   },
   {
     imgSrc: "./assets/imges/microservices.png",
-    description: "Web Development Concepts and T...",
+    description: "Web Development Concepts and Technology",
     title: "Microservices",
     rating: "4",
     author: "Evelyn Nguyen",
   },
   {
     imgSrc: "./assets/imges/pwa.png",
-    description: "Web Development Concepts and T...",
+    description: "Web Development Concepts and Technology",
     title: "Progressive Web Apps (PWA)",
     rating: "3",
     author: "liam Hernandez",
   },
   {
     imgSrc: "./assets/imges/wai.jpeg",
-    description: "Web Development Concepts and T...",
+    description: "Web Development Concepts and Technology",
     title: "Web Accessibility Initiative",
     rating: "4",
     author: "Avery Perez",
   },
   {
     imgSrc: "./assets/imges/cms.png",
-    description: "Web Development Concepts and T...",
+    description: "Web Development Concepts and Technology",
     title: "Content Management System (CMS)",
     rating: "4",
     author: "victoria Kim",
   },
   {
     imgSrc: "./assets/imges/analytics.png",
-    description: "Web Development Concepts and T...",
+    description: "Web Development Concepts and Technology",
     title: "Web Analytics",
     rating: "4",
     author: "Ryan Jones",
@@ -308,6 +308,8 @@ for (let i = 0; i < topicsData.length; i++) {
     "h5-author-single-topics" + topicsData[i]["title"].split(" ")[0];
 
   topicImg.src = topicsData[i]["imgSrc"];
+  topicImg.alt = topicsData[i]["title"].split(" ")[0] + " img";
+
   newTopicElement.appendChild(topicImg);
 
   topicDescription.appendChild(
@@ -331,129 +333,10 @@ for (let i = 0; i < topicsData.length; i++) {
   }
 
   infoContainer.appendChild(topicRatingContainer);
-  topicAuthor.appendChild(document.createTextNode("Author: "+topicsData[i]["author"]));
+  topicAuthor.appendChild(
+    document.createTextNode("Author: " + topicsData[i]["author"])
+  );
   infoContainer.appendChild(topicAuthor);
   newTopicElement.appendChild(infoContainer);
   section.appendChild(newTopicElement);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var container = document.getElementById("iframe-fav-container");
-
-window.addEventListener("message", function (event) {
-  if (event.data === "favoritesStatus") {
-    if (
-      !localStorage.getItem("favDisplay") ||
-      localStorage.getItem("favDisplay") === "none"
-    ) {
-      container.style.display = "none";
-    } else {
-      document
-        .getElementById("iframe-fav-container")
-        .contentWindow.postMessage("favoritesStatus", "*");
-      container.style.display = "block";
-    }
-  }
-
-  if (event.data === "colorMoodChange"){
-    setTimeout(() => {
-     
-    let backgroundDarkColor = "var( --dark-mode-bg_default)";
-  let backgroundLightColor = "var( --light-mode-bg_default)";
-  let textLightColor="var(  --light-mode-body-text)";
-  let textDarkColor="var( --dark-mode-body-text)";
-  
-  let ElementClassNameToChangeColor = [
-    "iframe-main-header",
-  
-    "div-single-topic",
-    "div-info-single-topic"
-  ];
-
-
-  let textClassNameToChangeColor=this.document.getElementsByClassName("text-color-mood-change");
-
-  if (
-    !localStorage.getItem("colorMood") ||
-    localStorage.getItem("colorMood") === "light"
-  ) {
-    this.document.getElementById("pageContent").style.backgroundColor="var(--light-mode-bg_body)";
-    for (let i = 0; i < ElementClassNameToChangeColor.length; i++) {
-      element= document.getElementsByClassName(
-        ElementClassNameToChangeColor[i]
-      );
-      for (let j=0;j<element.length;j++){
-       element[j].style.backgroundColor = backgroundLightColor;
-      }
-    
-    }
-
-    for(let t=0;t<textClassNameToChangeColor.length;t++){
-      
-      textElement= document.getElementsByClassName(
-        textClassNameToChangeColor[t]
-      );
-      for (let j=0;j<textElement.length;j++){
-        textElement[j].style.color = textLightColor;
-       }
-
-
-    }
-
-  
-
-
-  } else {
-    this.document.getElementById("pageContent").style.backgroundColor="var( --dark-mode-bg_body)";
-
-    for (let i = 0; i < ElementClassNameToChangeColor.length; i++) {
-      
-      element= document.getElementsByClassName(
-        ElementClassNameToChangeColor[i]
-      );
-      for (let j=0;j<element.length;j++){
-       element[j].style.backgroundColor =backgroundDarkColor
-      }
-    
-    }
-
-    // const iframe = document.getElementById('iframe-search-bar-content');
-
-    // iframe.contentWindow.postMessage("colorChange","*");
-    for(let t=0;t<textClassNameToChangeColor.length;t++){
-      
-      textElement= document.getElementsByClassName(
-        textClassNameToChangeColor[t]
-      );
-      for (let j=0;j<textElement.length;j++){
-        textElement[j].style.color = textDarkColor;
-       }
-
-
-    }  
-  }
-},0);
-
-  const iframe = document.getElementById('iframe-search-bar-content');
-
-  iframe.contentWindow.postMessage("colorChange","*");
-  }
-
-
-});
-
-
-
