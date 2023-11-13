@@ -30,14 +30,15 @@ body {
 
   height: fit-content;
   height: 100vh;
-  height: 5.9rem;
+  height: 4rem;
   width: 90vw;
   padding-top: 30px;
 }
 
 .div-search-inputs {
+  margin-top: 3px;
   height: 48px;
-
+  border-radius: 10px;
   width: 99.5%;
   display: flex;
   gap: 0;
@@ -47,11 +48,11 @@ body {
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
-  box-shadow: 0px 0px 3px 2px var(--light-mode-lines-color);
+  box-shadow: 0px 0px 5px 1px var(--light-mode-lines-color);
 }
 
 .srch-bar-icon {
-  width: 20px;
+  font-size: 20px;
   position: absolute;
   margin-top: 13px;
   margin-left: 10px;
@@ -73,10 +74,18 @@ select:focus-visible {
   height: 46px;
 }
 
+.search-bar,
+.selector-serch-bar,
+.div-single-topic,
+.div-info-single-topic,
+.img-single-topic {
+  background-color: var(--light-mode-bg_default);
+}
 .search-bar {
+  padding: 0;
   width: 100%;
   text-indent: 35px;
-  height: 46px;
+  height: 47px;
   border: none;
   outline: none;
   padding-left: 0px;
@@ -94,7 +103,6 @@ select:focus-visible {
 .div-select-label-container {
   position: relative;
   display: inline-block;
-  color: var(--light-mode-body-text);
 }
 
 .selector-serch-bar {
@@ -111,7 +119,6 @@ select:focus-visible {
   background-size: 1em;
   font-family: var(--font-family-Nunito-Sans) !important;
   font-weight: 700;
-  color: var(--light-mode-body-text);
   text-indent: 1px;
 }
 
@@ -160,7 +167,6 @@ select:focus-visible {
 /*****Topics Section Style******/
 
 .h1-topics-title-home-page {
-  color: var(--light-mode-body-text);
   font-weight: 700;
   margin-top: 10px;
 }
@@ -180,8 +186,7 @@ select:focus-visible {
 
 .div-single-topic {
   width: 250px;
-  height: 305px;
-  background-color: var(--light-mode-bg_default);
+  height: 315px;
   border-radius: 10px;
 }
 
@@ -192,20 +197,26 @@ select:focus-visible {
 }
 
 .div-info-single-topic {
+  overflow: hidden;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  background-color: var(--light-mode-bg_default);
+  margin-bottom: 15px;
 }
 
 .h5-disc-single-topic {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .h3-title-single-topic {
   font-weight: 700;
+  font-size: 1em;
+  height: 33px;
 }
 
 .div-rating-single-topic {

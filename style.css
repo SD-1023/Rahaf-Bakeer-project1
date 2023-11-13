@@ -14,9 +14,17 @@ body {
   position: sticky;
 }
 
+.text-color-mood-change {
+  color: var(--light-mode-body-text);
+}
+.iframe-main-header,
+.website-main-header,
+.fav-section,
+.header-href {
+  background-color: var(--light-mode-bg_default);
+}
 .iframe-main-header {
   height: 12.5rem;
-  margin-bottom: 20px;
 }
 
 .header-flex-nav-href {
@@ -55,16 +63,14 @@ a {
 }
 
 .header-href-span-text {
-  color: var(--light-mode-body-text);
-  font-weight: 400;
+  font-weight: 700;
   margin-left: 5px;
   font-size: 15px;
 }
 
 .header-icon-href {
-  width: 20px;
+  font-size: 20px;
 }
-
 
 .section-welcome-div-triangles {
   width: 100%;
@@ -121,7 +127,6 @@ h6 {
 }
 
 .h3-heading-welcome-text {
-  color: var(--light-mode-body-text);
   font-weight: 400;
 }
 
@@ -145,67 +150,61 @@ iframe {
   width: 100%;
 }
 .section-footer {
-  height: 75px;
+  height: 85px;
   width: fit-content;
   display: flex;
   align-items: center;
   margin: auto;
-  gap:5px;
+  gap: 5px;
 }
 
-.footer-img-heart-icon{
+.footer-img-heart-icon {
   width: 25px;
 }
 
-
-ion-icon {
+.icon-heart-footer {
   font-size: 25px;
-  color:var(--heart-color);
+  color: var(--heart-color);
 }
-
 
 /*************favorite Style*************/
 
-.div-fav-flex{
+.div-fav-flex {
   display: flex;
   margin-top: 15px;
-  gap:20px;
-
+  gap: 20px;
 }
 
-.fav-section{
+.fav-section {
   height: 200px;
   width: 100%;
-  background-color:var(--light-mode-bg_default);
-
+  background-color: var(--light-mode-bg_default);
 }
 
-.div-fav-topic{
+.div-fav-topic {
   width: 185px;
   height: 125px;
   box-shadow: 0px 0px 3px 2px var(--light-mode-lines-color);
-  border-radius:10px;
-
+  border-radius: 10px;
 }
-.img-fav{
+.img-fav {
   width: 100%;
   height: 70px;
-  border-radius:10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
+  background-color: var(--light-mode-bg_default);
 }
 
-
-.iframe-fav{
-  height:200px;
+.iframe-fav {
+  height: 200px;
   z-index: 1000;
   position: fixed;
   bottom: 0;
   display: none;
 
- 
   transition: transform 0.5s ease-out;
 }
 
-.div-fav-section{
+.div-fav-section {
   width: fit-content;
   margin-left: 35px;
   margin-right: 20px;
@@ -213,15 +212,29 @@ ion-icon {
   padding-bottom: 5px;
 }
 
-
-.h5-fav-title{
+.h5-fav-title {
   font-size: 20px;
 }
 
-.div-fav-topic-info{
+.div-fav-topic-info {
   margin-left: 10px;
+  overflow: hidden;
+  margin-right: 10px;
 }
 
-.fav-topic-name{
+.fav-topic-name {
   font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.span-text-footer,
+.span-copy-footer,
+.span-year-footer {
+  font-weight: 700;
+}
+
+.span-copy-footer {
+  font-size: 20px;
 }

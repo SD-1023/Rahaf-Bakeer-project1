@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+}
+
+.section-topic-details {
+  background-color: var(--dark-mode-bg_body);
+  height: 280px;
+  position: relative;
+}
+.div-img-btn-topic-details {
+  width: 285px;
+  height: 355px;
+  box-shadow: 0px 0px 5px 1px var(--dark-mode-lines-color);
+
+  background-color: var(--light-mode-bg_default);
+  right: 250px;
+}
+
+.img-topic-details {
+  width: 99%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+}
+.div-img-btn-topic-details,
+.div-topic-text-topic-details {
+  position: absolute;
+  top: 30px;
+}
+
+.div-topic-text-topic-details {
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  left: 250px;
+}
+
+.light-text-details {
+  color: var(--dark-mode-body-text);
+}
+.h2-text-topic-title {
+  font-weight: 700;
+}
+
+.p-topic-info-details {
+  font-weight: 400;
+}
+
+.h5-text-type-topic-details {
+  color: var(--brand-secondary);
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.div-details-topic-rating-single-topic {
+  color: orange;
+}
+
+.div-btn-text-details {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: 1px solid var(--light-mode-lines-color);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.btn-img-heart-details {
+  color: white;
+}
+
+.btn-add-fav-topic-details {
+  display: flex;
+  background-color: var(--brand-secondary);
+  align-items: center;
+  justify-content: space-around;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  height: 45px;
+}
+
+.span-text-btn-add-fav-topic-details {
+  font-size: medium;
+  font-weight: 400;
+}
+
+.h5-title-single-topics-details {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.span-text-extra-details {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.div-title-author-topics-details-flex {
+  display: flex;
+  gap: 5px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+.span-text-author-details {
+  color: var(--brand-primary);
+  text-decoration: underline;
+}

@@ -89,9 +89,9 @@
   }
 
   .div-info-single-topic {
-    height: 100px;
+    height: fit-content;
     position: absolute;
-    bottom: 35px;
+    bottom: 5px;
     left: 0;
     width: 100%;
   }
@@ -101,7 +101,16 @@
   }
 
   .fav-section {
-    width: fit-content;
-    height: 100%;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+
+  .div-rating-single-topic {
+    margin-top: 36px;
+  }
+
+  .h3-title-single-topic {
+    height: fit-content;
   }
 }

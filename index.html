@@ -19,29 +19,145 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <iframe class="iframe-main-header" src="header.html"></iframe>
+        <section class="iframe-main-header">
+            <header class="website-main-header">
+                <h4 class="header-title-heading">Web Topics</h4>
+                <nav class="header-flex-nav-href">
+                    <a class="header-href" id="header-href-dark-mood" href="#"
+                        onclick="ChangeColorMood('button')">
+                        <ion-icon
+                            class="header-icon-href text-color-mood-change"
+                            name="moon-outline"></ion-icon>
+                        <span
+                            class="header-href-span-text text-color-mood-change"
+                            id="header-href-span-text-mood">Dark Mode</span>
+                    </a>
+                    <a class="header-href" id="header-href-fav" href="#"
+                        onclick="loadContent()">
+                        <ion-icon
+                            class="header-icon-href text-color-mood-change"
+                            name="heart-outline"></ion-icon>
+                        <span
+                            class="header-href-span-text text-color-mood-change"
+                            id="header-href-span-text-fav">Favorites</span></a>
+                </nav>
+            </header>
+
+            <section class="section-welcome">
+                <div class="section-welcome-div-triangles">
+
+                    <div class="div-triangle-left">
+                    </div>
+                    <div class="div-triangle-right">
+                    </div>
+                </div>
+                <div class="section-welcome-div-text">
+                    <h1 class="h1-heading-welcome-text">
+                        Welcome to our website!
+                    </h1>
+                    <h3 class="h3-heading-welcome-text text-color-mood-change">
+                        We have a new design that's fresh, modern, and easy to
+                        use.
+                    </h3>
+                </div>
+            </section>
+        </section>
 
         <section id="pageContent" class="sectionPageContent">
 
             <section class="section-homePage ">
 
-                <iframe class="iframe-serchbar" src="searchBar.html"></iframe>
+                <div class="iframe-serchbar" id="iframe-search-bar-content">
+                    <div class="div-search-inputs">
+                        <form class="first-input-form">
 
-                <h1 class="h1-topics-title-home-page">"24" Web Topics Found</h1>
+                            <ion-icon
+                                class="srch-bar-icon text-color-mood-change"
+                                name="search-outline"></ion-icon>
+                            <input class="search-bar input-serch-home"
+                                id="search-input-text" type="text"
+                                placeholder="Search the website...">
+                        </form>
+                        <div class="div-hr-dividing">
+
+                        </div>
+                        <div
+                            class="srch-bar-sec-input div-select-label-container">
+                            <span class="select-label text-color-mood-change">Sort
+                                by:</span>
+
+                            <select
+                                class="selector-serch-bar text-color-mood-change"
+                                id="sort-selector-serch-bar"
+                                name="sort">
+                                <option value="default">Default</option>
+
+                            </select>
+
+                            <div class="div-dividing div-dividing-hide">
+                                <div class="div-vl-dividing"></div>
+
+                            </div>
+                        </div>
+
+                        <div
+                            class="srch-bar-three-input div-select-label-container">
+                            <span class="select-label text-color-mood-change">Filter
+                                by:</span>
+
+                            <select
+                                class="selector-serch-bar text-color-mood-change"
+                                id="filter-selector-serch-bar" name="sort">
+
+                                <option value="default">Default</option>
+
+                            </select>
+
+                            <div class="div-dividing">
+
+                                <div class="div-vl-dividing"></div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <h1 class="h1-topics-title-home-page text-color-mood-change">"24"
+                    Web Topics Found</h1>
 
                 <section id="section-load-topics" class="section-flex-topics">
 
                 </section>
             </section>
 
-            <iframe class="iframe-footer" src="footer.html"></iframe>
+            <section class="section-footer">
+                <span class="span-text-footer text-color-mood-change">
+                    Developed with
+                </span>
+                <ion-icon class="icon-heart-footer" name="heart"></ion-icon>
+                <span class="span-copy-footer text-color-mood-change">&copy;</span>
+                <span class="span-year-footer text-color-mood-change"> 2023</span>
+            </section>
         </section>
-        <iframe id="iframe-fav-container" class="iframe-fav" src="favorite.html"></iframe>
 
+        <section class="fav-section iframe-fav" id="iframe-fav-container">
+            <div class="div-fav-section">
+                <h3 class="h5-fav-title text-color-mood-change">My Favorite
+                    Topics</h3>
+                <div id="dev-fav-content-display-flex" class="div-fav-flex">
+                </div>
 
-        
+            </div>
+        </section>
+
         <script src="script.js">
         </script>
+        <script src="headerScript.js"></script>
+        <script src="ScriptFav.js"></script>
+        <script type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     </body>
 
