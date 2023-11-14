@@ -338,5 +338,12 @@ for (let i = 0; i < topicsData.length; i++) {
   );
   infoContainer.appendChild(topicAuthor);
   newTopicElement.appendChild(infoContainer);
+  newTopicElement.setAttribute("onclick","openDetailsPage();");
   section.appendChild(newTopicElement);
+}
+
+
+
+function openDetailsPage() {
+  window.location.href = 'details.html';
 }

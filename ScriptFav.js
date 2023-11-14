@@ -50,4 +50,18 @@ for (let i = 0; i < favData.length; i++) {
   divFav.appendChild(newTopicElement);
 }
 
-window.addEventListener("message", function (event) {});
+if (
+  !localStorage.getItem("colorMood") ||
+  localStorage.getItem("colorMood") === "light"
+) {
+  let favDivElement = document.getElementsByClassName("div-fav-topic");
+  for (let d = 0; d < favDivElement.length; d++) {
+    favDivElement[d].style.boxShadow =
+      "0px 0px 3px 2px var(--light-mode-lines-color)";
+  }
+} else {
+  let favDivElement = document.getElementsByClassName("div-fav-topic");
+  for (let d = 0; d < favDivElement.length; d++) {
+    favDivElement[d].style.setProperty("box-shadow", "none", "important");
+  }
+}

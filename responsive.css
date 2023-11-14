@@ -19,7 +19,7 @@
     gap: 15px;
   }
   .div-topic-text-topic-details {
-    background-color: var(--dark-mode-bg_body);
+    background-color: var(--light-mode-body-text);
     width: 100%;
     height: fit-content;
   }
@@ -45,7 +45,6 @@
     margin-top: 30px;
   }
   .section-details-page {
-    /* width: 100%; */
     height: 100%;
   }
 }
@@ -196,6 +195,32 @@
   }
 
   .div-img-btn-topic-details {
-    width: 265px;
+    width: 360px;
+    height: 415px;
+  }
+
+  .section-footer-details {
+    margin-right: auto;
+    margin-bottom: 15px;
+  }
+
+  .h4-info-row-table-details {
+    font-size: 0.8em;
+  }
+
+  .section-header-details {
+    height: 12.5rem;
+  }
+
+  .div-fav-topic {
+    width: 175px;
+  }
+}
+
+@media (max-width: 700px) and (min-width: 600px) {
+  .selector-serch-bar {
+    padding-left: 12px;
+    padding-right: 10px;
+    background-position: right 0.5rem bottom 0.5rem;
   }
 }

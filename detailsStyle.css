@@ -16,7 +16,7 @@ body {
 }
 .section-topic-details {
   max-width: 100vw;
-  background-color: var(--dark-mode-bg_body);
+  background-color: var(--light-mode-body-text);
   height: 285px;
   display: flex;
   justify-content: center;
@@ -41,7 +41,7 @@ body {
 }
 
 .div-topic-text-topic-details {
-  margin-top: 30px;
+  margin-top: 25px;
   height: 200px;
 
   width: 535px;
@@ -56,6 +56,7 @@ body {
 
 .p-topic-info-details {
   font-weight: 400;
+  font-size: 15px;
   font-size: medium;
 }
 
@@ -66,6 +67,7 @@ body {
 }
 
 .div-details-topic-rating-single-topic {
+  font-size: 13px;
   color: orange;
 }
 
@@ -85,18 +87,20 @@ body {
 
 .btn-img-heart-details {
   color: white;
+  font-size: 25px;
 }
 
 .btn-add-fav-topic-details {
   display: flex;
   background-color: var(--brand-secondary);
   align-items: center;
-  justify-content: space-around;
-  width: 85%;
+  justify-content: center;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   border: none;
   height: 45px;
+  gap: 10px;
 }
 
 .span-text-btn-add-fav-topic-details {
@@ -131,7 +135,7 @@ body {
   background-color: var(--light-mode-bg_default);
   width: 535px;
   border-radius: 5px;
-  height: 360px;
+  height: 290px;
 }
 
 .div-row-info-elemnt-details,
@@ -147,9 +151,10 @@ body {
 }
 .div-row-info-elemnt-details {
   display: flex;
-  gap: 15px;
+  gap: 12px;
   padding-left: 20px;
-  height: 50px;
+  height: 40px;
+  background-color: transparent;
   align-items: center;
 }
 
@@ -167,13 +172,13 @@ body {
 .div-text-info-table-info-details {
   display: flex;
   flex-direction: column;
-  gap: 90px;
+  gap: 70px;
   height: 285px;
   height: fit-content;
 }
 
 .icon-checkmark-info-details {
-  font-size: 25px;
+  font-size: 20px;
   color: var(--brand-secondary);
 }
 
@@ -181,4 +186,32 @@ body {
   display: flex;
   flex-direction: column;
   height: fit-content;
+}
+
+.header-href {
+  line-height: 30px;
+}
+
+.website-main-header {
+  height: 60px;
+}
+
+.iframe-main-header {
+  height: 10.5rem;
+}
+
+.section-topic-details {
+  height: 270px;
+}
+
+.h2-text-topic-title,
+.h5-text-type-topic-details {
+  font-size: 20px;
+}
+
+.section-footer {
+  margin-top: 15px;
+  height: fit-content;
+  margin-right: unset;
+  margin-left: auto;
 }

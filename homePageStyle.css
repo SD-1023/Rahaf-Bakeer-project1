@@ -187,6 +187,7 @@ select:focus-visible {
   width: 250px;
   height: 315px;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .img-single-topic {
