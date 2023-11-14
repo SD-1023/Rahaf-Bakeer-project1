@@ -20,40 +20,150 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <iframe class="iframe-main-header" src="header.html"></iframe>
+        <section class="iframe-main-header">
+            <header class="website-main-header">
+                <h4 class="header-title-heading">Web Topics</h4>
+                <nav class="header-flex-nav-href">
+                    <a class="header-href" id="header-href-dark-mood" href="#"
+                        onclick="ChangeColorMood('button')">
+                        <ion-icon
+                            class="header-icon-href text-color-mood-change"
+                            name="moon-outline"></ion-icon>
+                        <span
+                            class="header-href-span-text text-color-mood-change"
+                            id="header-href-span-text-mood">Dark Mode</span>
+                    </a>
+                    <a class="header-href" id="header-href-fav" href="#"
+                        onclick="loadContent()">
+                        <ion-icon
+                            class="header-icon-href text-color-mood-change"
+                            name="heart-outline"></ion-icon>
+                        <span
+                            class="header-href-span-text text-color-mood-change"
+                            id="header-href-span-text-fav">Favorites</span></a>
+                </nav>
+            </header>
+
+            <section class="section-welcome">
+                <div class="section-welcome-div-triangles">
+
+                    <div class="div-triangle-left">
+                    </div>
+                    <div class="div-triangle-right">
+                    </div>
+                </div>
+                <div class="section-welcome-div-text">
+                    <h1 class="h1-heading-welcome-text">
+                        Welcome to our website!
+                    </h1>
+                    <h3 class="h3-heading-welcome-text text-color-mood-change">
+                        We have a new design that's fresh, modern, and easy to
+                        use.
+                    </h3>
+                </div>
+            </section>
+        </section>
 
         <section class="section-details-page">
 
             <section class="section-topic-details">
-                <div class="div-topic-text-topic-details">
+                <div class="div-text-info-table-info-details">
+                    <div class="div-topic-text-topic-details">
 
-                    <h4 class="h5-text-type-topic-details">
-                        web Development Languages
-                    </h4>
-                    <h2 class="h2-text-topic-title light-text-details">
-                        HTML
-                    </h2>
-                    <div class="div-details-topic-rating-single-topic">
-                        <i class="fa  fa-star"></i>
-                        <i class="fa  fa-star"></i>
-                        <i class="fa  fa-star"></i>
-                        <i class="fa  fa-star"></i>
-                        <i class="fa fa-star-o "></i>
+                        <h4 class="h5-text-type-topic-details">
+                            web Development Languages
+                        </h4>
+                        <h2 class="h2-text-topic-title light-text-details">
+                            HTML
+                        </h2>
+                        <div class="div-details-topic-rating-single-topic">
+                            <i class="fa  fa-star"></i>
+                            <i class="fa  fa-star"></i>
+                            <i class="fa  fa-star"></i>
+                            <i class="fa  fa-star"></i>
+                            <i class="fa fa-star-o "></i>
+                        </div>
+                        <p class="p-topic-info-details light-text-details">
+                            HTML (Hypertext Markup Language) is the standard
+                            markup
+                            language for
+                            creating web pages and other information that can be
+                            displayed in a web
+                            browser. It provides a structure for content and
+                            defines
+                            how it should be
+                            displayed on a web page, including text, images, and
+                            multimedia. HTML is
+                            essential for creating static web pages and is a
+                            foundational technology
+                            for the World Wide Web.
+                        </p>
+                        <!-- </div> -->
                     </div>
-                    <p class="p-topic-info-details light-text-details">
-                        HTML (Hypertext Markup Language) is the standard markup
-                        language for
-                        creating web pages and other information that can be
-                        displayed in a web
-                        browser. It provides a structure for content and defines
-                        how it should be
-                        displayed on a web page, including text, images, and
-                        multimedia. HTML is
-                        essential for creating static web pages and is a
-                        foundational technology
-                        for the World Wide Web.
-                    </p>
+
+                    <div class="div-flex-table-footer">
+                        <section class="section-table-info-details">
+                            <div
+                                class="div-row-info-elemnt-details div-row-info-first-elemnt-details"><h1
+                                    class="h1-title-info-row-table-details text-color-mood-change">HTML
+                                    Sub Topics</h1></div>
+                            <div class="div-row-info-elemnt-details"><ion-icon
+                                    class="icon-checkmark-info-details"
+                                    name="checkmark-circle-outline"></ion-icon><h4
+                                    class="h4-info-row-table-details text-color-mood-change">
+                                    HTML syntax and structure</h4>
+                            </div>
+                            <div class="div-row-info-elemnt-details"> <ion-icon
+                                    class="icon-checkmark-info-details"
+                                    name="checkmark-circle-outline"></ion-icon><h4
+                                    class="h4-info-row-table-details text-color-mood-change">HTML
+                                    elements and attributes</h4>
+                            </div>
+                            <div class="div-row-info-elemnt-details"><ion-icon
+                                    class="icon-checkmark-info-details"
+                                    name="checkmark-circle-outline"></ion-icon><h4
+                                    class="h4-info-row-table-details text-color-mood-change">
+                                    HTML forms and input elements</h4>
+                            </div>
+                            <div class="div-row-info-elemnt-details"><ion-icon
+                                    class="icon-checkmark-info-details"
+                                    name="checkmark-circle-outline"></ion-icon><h4
+                                    class="h4-info-row-table-details text-color-mood-change">
+                                    HTML tables and lists</h4>
+                            </div>
+                            <div class="div-row-info-elemnt-details"><ion-icon
+                                    class="icon-checkmark-info-details"
+                                    name="checkmark-circle-outline"></ion-icon><h4
+                                    class="h4-info-row-table-details text-color-mood-change">
+                                    HTML multimedia elements (audio, video,
+                                    images)</h4>
+                            </div>
+                            <div
+                                class="div-row-info-elemnt-details div-row-info-last-elemnt-details"><ion-icon
+                                    class="icon-checkmark-info-details"
+                                    name="checkmark-circle-outline"></ion-icon><h4
+                                    class="h4-info-row-table-details text-color-mood-change">
+                                    HTML accessibility and semantic markup</h4>
+                            </div>
+                        </section>
+
+                        <section class="section-footer">
+                            <span
+                                class="span-text-footer text-color-mood-change">
+                                Developed with
+                            </span>
+                            <ion-icon class="icon-heart-footer" name="heart"></ion-icon>
+                            <span
+                                class="span-copy-footer text-color-mood-change">&copy;</span>
+                            <span
+                                class="span-year-footer text-color-mood-change">
+                                2023</span>
+                        </section>
+
+                    </div>
+
                 </div>
+
                 <div class="div-img-btn-topic-details">
 
                     <img class="img-topic-details"
@@ -81,8 +191,20 @@
                     </div>
                 </div>
             </section>
+
+        </section>
+        <section class="fav-section iframe-fav" id="iframe-fav-container">
+            <div class="div-fav-section">
+                <h3 class="h5-fav-title text-color-mood-change">My Favorite
+                    Topics</h3>
+                <div id="dev-fav-content-display-flex" class="div-fav-flex">
+                </div>
+
+            </div>
         </section>
 
+        <script src="headerScript.js"></script>
+        <script src="ScriptFav.js"></script>
         <script type="module"
             src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule

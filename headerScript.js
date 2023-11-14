@@ -23,32 +23,41 @@ function changeToLight(
   vlLines,
   hrLines
 ) {
+
+  if( document
+    .getElementsByClassName("sectionPageContent")[0]){
   document
     .getElementsByClassName("sectionPageContent")[0]
     .style.setProperty("background-color", bodyLightColor, "important");
+    }
 
   for (let i = 0; i < ElementClassNameToChangeColor.length; i++) {
     element = document.getElementsByClassName(ElementClassNameToChangeColor[i]);
     for (let j = 0; j < element.length; j++) {
+      if (element[j]){
       element[j].style.backgroundColor = backgroundLightColor;
-    }
+    }}
   }
 
   for (let t = 0; t < textClassNameToChangeColor.length; t++) {
+    if(textClassNameToChangeColor[t]){
     textClassNameToChangeColor[t].style.setProperty(
       "color",
       textLightColor,
       "important"
     );
-  }
-
+  }}
+if(document.getElementById("search-input-text")){
   document.getElementById("search-input-text").placeholder.color =
-    textLightColor;
+    textLightColor;}
 
   for (let li = 0; li < vlLines.length; li++) {
+    if(vlLines[li]){
     vlLines[li].style.borderLeftColor = "var(--light-mode-lines-color)";
-  }
+  }}
+  if(hrLines){
   hrLines.style.borderLeftColor = "var(--light-mode-lines-color)";
+}
 }
 
 function changeToDark(
@@ -60,35 +69,42 @@ function changeToDark(
   vlLines,
   hrLines
 ) {
+
+  if( document
+    .getElementsByClassName("sectionPageContent")[0]){
   document
     .getElementsByClassName("sectionPageContent")[0]
     .style.setProperty("background-color", bodyDarkColor, "important");
-
+    }
   for (let i = 0; i < ElementClassNameToChangeColor.length; i++) {
     element = document.getElementsByClassName(ElementClassNameToChangeColor[i]);
     for (let j = 0; j < element.length; j++) {
+      if(element[j]){
       element[j].style.backgroundColor = backgroundDarkColor;
-    }
+    }}
   }
 
   for (let t = 0; t < textClassNameToChangeColor.length; t++) {
+    if(textClassNameToChangeColor[t]){
     textClassNameToChangeColor[t].style.setProperty(
       "color",
       textDarkColor,
       "important"
     );
-  }
-
+  }}
+if(document.getElementById("search-input-text")){
   document.getElementById("search-input-text").placeholder.color =
-    textDarkColor;
+    textDarkColor;}
 
   for (let li = 0; li < vlLines.length; li++) {
+    if(vlLines[li]){
     vlLines[li].style.borderLeftColor = "var(--dark-mode-lines-color)";
-  }
+  }}
+  if(hrLines){
   hrLines.style.borderLeftColor = "var(--dark-mode-lines-color)";
-}
+}}
 
-ChangeColorMood = function ChangeColorMood(type) {
+ function ChangeColorMood(type) {
   let backgroundDarkColor = "var( --dark-mode-bg_default)";
   let backgroundLightColor = "var( --light-mode-bg_default)";
   let textLightColor = "var( --light-mode-body-text) ";
@@ -110,21 +126,32 @@ ChangeColorMood = function ChangeColorMood(type) {
     "div-fav-topic",
   ];
 
-  let textClassNameToChangeColor = document.getElementsByClassName(
+  if(document.getElementsByClassName(
     "text-color-mood-change"
-  );
-  let vlLines = document.getElementsByClassName("div-vl-dividing");
+  ))
 
-  let hrLines = document.getElementsByClassName("div-hr-dividing")[0];
-  let headerHrefBorder = document.getElementsByClassName("header-href");
+  {var textClassNameToChangeColor = document.getElementsByClassName(
+    "text-color-mood-change"
+  );}
+
+  if(document.getElementsByClassName("div-vl-dividing"))
+ { var vlLines = document.getElementsByClassName("div-vl-dividing");}
+if(document.getElementsByClassName("div-hr-dividing")[0])
+{  var hrLines = document.getElementsByClassName("div-hr-dividing")[0];
+} 
+
+if(document.getElementsByClassName("header-href"))
+{var headerHrefBorder = document.getElementsByClassName("header-href");}
 
   if (
     !localStorage.getItem("colorMood") ||
     localStorage.getItem("colorMood") === "light"
   ) {
     if (type === "button") {
+
+      if(document.getElementsByClassName("div-search-inputs")[0]){
       document.getElementsByClassName("div-search-inputs")[0].style.boxShadow =
-        "none";
+        "none";}
 
       favDivElement = document.getElementsByClassName("div-fav-topic");
 
@@ -146,9 +173,10 @@ ChangeColorMood = function ChangeColorMood(type) {
       );
       localStorage.setItem("colorMood", "Dark");
     } else if (type === "check") {
+      if(document.getElementsByClassName("div-search-inputs")[0]){
       document.getElementsByClassName("div-search-inputs")[0].style.boxShadow =
         "0px 0px 5px 1px var(--light-mode-lines-color)";
-
+      }
       favDivElement = document.getElementsByClassName("div-fav-topic");
       for (let d = 0; d < favDivElement.length; d++) {
         favDivElement[d].style.boxShadow =
@@ -172,9 +200,9 @@ ChangeColorMood = function ChangeColorMood(type) {
   } else {
     if (type === "button") {
       localStorage.setItem("colorMood", "light");
-
+      if(document.getElementsByClassName("div-search-inputs")[0]){
       document.getElementsByClassName("div-search-inputs")[0].style.boxShadow =
-        "0px 0px 5px 1px var(--light-mode-lines-color)";
+        "0px 0px 5px 1px var(--light-mode-lines-color)";}
 
       favDivElement = document.getElementsByClassName("div-fav-topic");
       for (let d = 0; d < favDivElement.length; d++) {
@@ -195,15 +223,16 @@ ChangeColorMood = function ChangeColorMood(type) {
         hrLines
       );
     } else if (type === "check") {
+      if(document.getElementsByClassName("div-search-inputs")[0]){
       document.getElementsByClassName("div-search-inputs")[0].style.boxShadow =
-        "none";
+        "none";}
 
       favDivElement = document.getElementsByClassName("div-fav-topic");
       for (let d = 0; d < favDivElement.length; d++) {
         favDivElement[d].style.boxShadow = "none";
       }
-      document.getElementsByClassName("div-search-inputs")[0].style.boxShadow =
-        "none";
+      // document.getElementsByClassName("div-search-inputs")[0].style.boxShadow =
+      //   "none";
 
       for (let k = 0; k < headerHrefBorder.length; k++) {
         headerHrefBorder[k].style.borderColor = "var( --dark-mode-lines-color)";
