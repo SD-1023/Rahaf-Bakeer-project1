@@ -112,7 +112,7 @@ select:focus-visible {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-image: url("./assets/icons/arrow-down-icon.svg");
+  background-image: url("./style/icons/arrow-down-icon.svg");
   background-repeat: no-repeat;
   background-position: right 1rem bottom 0.5rem;
   background-size: 1em;
