@@ -58,7 +58,7 @@ function changeToLight(
     }
   }
   if (hrLines) {
-    hrLines.style.borderLeftColor = "var(--light-mode-lines-color)";
+    hrLines.style.borderBottomColor = "var(--light-mode-lines-color)";
   }
 
   if (document.getElementsByClassName("body-details-page")[0]) {
@@ -132,7 +132,7 @@ function changeToDark(
     }
   }
   if (hrLines) {
-    hrLines.style.borderLeftColor = "var(--dark-mode-lines-color)";
+    hrLines.style.borderBottomColor = "var(--dark-mode-lines-color)";
   }
 
   if (document.getElementsByClassName("body-details-page")[0]) {
