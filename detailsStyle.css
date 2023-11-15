@@ -52,6 +52,10 @@ html,body {
   width: 535px;
 }
 
+.h5-cridits-text-extra-details{
+  font-weight: 200;
+}
+
 .light-text-details {
   color: var(--dark-mode-body-text);
 }
