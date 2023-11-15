@@ -61,9 +61,9 @@ function changeToLight(
     hrLines.style.borderLeftColor = "var(--light-mode-lines-color)";
   }
 
-  if (document.getElementsByClassName("section-details-page")[0]) {
+  if (document.getElementsByClassName("body-details-page")[0]) {
     document.getElementsByClassName(
-      "section-details-page"
+      "body-details-page"
     )[0].style.backgroundColor = "var( --light-mode-bg_body)";
 
     var taElement = document.getElementsByClassName(
@@ -72,12 +72,21 @@ function changeToLight(
 
     for (ta = 0; ta < taElement.length; ta++) {
       taElement[ta].style.border =
-        "border: 1px solid var(--dark-mode-lines-color)";
+        "1px solid var(--light-mode-lines-color)";
     }
     document.getElementsByClassName(
       "section-table-info-details"
     )[0].style.border = "border: 1px solid var(--light-mode-lines-color)";
   }
+
+
+  if(document.getElementsByClassName("selector-serch-bar")[0]){
+    var arrowSearch= document.getElementsByClassName("selector-serch-bar");
+    for(let i = 0; i <arrowSearch.length; i++){
+      arrowSearch[i].style.backgroundImage = "url(" +"./assets/icons/arrow-down-icon.svg";
+    }
+  }
+
 }
 
 function changeToDark(
@@ -126,9 +135,9 @@ function changeToDark(
     hrLines.style.borderLeftColor = "var(--dark-mode-lines-color)";
   }
 
-  if (document.getElementsByClassName("section-details-page")[0]) {
+  if (document.getElementsByClassName("body-details-page")[0]) {
     document.getElementsByClassName(
-      "section-details-page"
+      "body-details-page"
     )[0].style.backgroundColor = "var(--dark-mode-bg_body)";
 
     var taElement = document.getElementsByClassName(
@@ -136,12 +145,21 @@ function changeToDark(
     );
     for (ta = 0; ta < taElement.length; ta++) {
       taElement[ta].style.border =
-        "border: 1px solid var(--dark-mode-lines-color)";
+        "1px solid var(--dark-mode-lines-color)";
     }
     document.getElementsByClassName(
       "section-table-info-details"
     )[0].style.border = "border: 1px solid var(--dark-mode-lines-color)";
   }
+
+
+if(document.getElementsByClassName("selector-serch-bar")[0]){
+  var arrowSearch= document.getElementsByClassName("selector-serch-bar");
+  for(let i = 0; i <arrowSearch.length; i++){
+    arrowSearch[i].style.backgroundImage = "url(" +"./assets/icons/arrow-white-down.svg";
+  }
+}
+
 }
 
 function ChangeColorMood(type) {
