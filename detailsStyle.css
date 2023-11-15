@@ -140,7 +140,7 @@ html,body {
   background-color: var(--light-mode-bg_default);
   width: 535px;
   border-radius: 5px;
-  height: 360px;
+  height: fit-content;
 }
 
 .div-row-info-elemnt-details,
