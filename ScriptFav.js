@@ -1,11 +1,11 @@
 let favData = [
   {
-    imgSrc: "./assets/imges/react.webp",
+    imgSrc: "./style/imges/react.webp",
     title: "React",
     rating: "4",
   },
   {
-    imgSrc: "./assets/imges/cloud.jpeg",
+    imgSrc: "./style/imges/cloud.jpeg",
     title: "Web Development Concepts and T...",
     rating: "4",
   },

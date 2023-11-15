@@ -83,7 +83,7 @@ function changeToLight(
   if(document.getElementsByClassName("selector-serch-bar")[0]){
     var arrowSearch= document.getElementsByClassName("selector-serch-bar");
     for(let i = 0; i <arrowSearch.length; i++){
-      arrowSearch[i].style.backgroundImage = "url(" +"./assets/icons/arrow-down-icon.svg";
+      arrowSearch[i].style.backgroundImage = "url(" +"./style/icons/arrow-down-icon.svg";
     }
   }
 
@@ -156,7 +156,7 @@ function changeToDark(
 if(document.getElementsByClassName("selector-serch-bar")[0]){
   var arrowSearch= document.getElementsByClassName("selector-serch-bar");
   for(let i = 0; i <arrowSearch.length; i++){
-    arrowSearch[i].style.backgroundImage = "url(" +"./assets/icons/arrow-white-down.svg";
+    arrowSearch[i].style.backgroundImage = "url(" +"./style/icons/arrow-white-down.svg";
   }
 }
 
