@@ -143,6 +143,10 @@ html,body {
   height: fit-content;
 }
 
+.h5-cridits-text-extra-details{
+  font-weight: 200;
+}
+
 .div-row-info-elemnt-details,
 .section-table-info-details {
   border: 1px solid var(--light-mode-lines-color);
