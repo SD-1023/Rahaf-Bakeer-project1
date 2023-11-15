@@ -50,6 +50,13 @@ for (let i = 0; i < favData.length; i++) {
   divFav.appendChild(newTopicElement);
 }
 
+
+let textLightColor = "var( --light-mode-body-text) ";
+  let textDarkColor = "var(--dark-mode-body-text) ";
+  var textClassNameToChangeColor = document.getElementsByClassName(
+    "text-color-mood-change"
+  );
+
 if (
   !localStorage.getItem("colorMood") ||
   localStorage.getItem("colorMood") === "light"
@@ -59,9 +66,31 @@ if (
     favDivElement[d].style.boxShadow =
       "0px 0px 3px 2px var(--light-mode-lines-color)";
   }
+
+
+  for (let t = 0; t < textClassNameToChangeColor.length; t++) {
+    if (textClassNameToChangeColor[t]) {
+      textClassNameToChangeColor[t].style.setProperty(
+        "color",
+        textLightColor,
+        "important"
+      );
+    }
+  }
 } else {
   let favDivElement = document.getElementsByClassName("div-fav-topic");
   for (let d = 0; d < favDivElement.length; d++) {
     favDivElement[d].style.setProperty("box-shadow", "none", "important");
+  }
+
+
+  for (let t = 0; t < textClassNameToChangeColor.length; t++) {
+    if (textClassNameToChangeColor[t]) {
+      textClassNameToChangeColor[t].style.setProperty(
+        "color",
+        textDarkColor,
+        "important"
+      );
+    }
   }
 }
