@@ -47,6 +47,11 @@
   .section-details-page {
     height: 100%;
   }
+
+  .section-footer-details {
+    margin-right: auto;
+  }
+  
 }
 
 @media (max-width: 600px) {
@@ -188,6 +193,7 @@
 
   .h5-text-type-topic-details {
     margin-top: 25px;
+    font-size: 18px;
   }
 
   .section-table-info-details {
@@ -195,12 +201,15 @@
   }
 
   .div-img-btn-topic-details {
-    width: 360px;
-    height: 415px;
+    width: 90%;
+    height: fit-content;
   }
 
+  .div-btn-text-details{
+margin-bottom: 25px;
+  }
   .section-footer-details {
-    margin-right: auto;
+    /* margin-right: auto; */
     margin-bottom: 15px;
   }
 

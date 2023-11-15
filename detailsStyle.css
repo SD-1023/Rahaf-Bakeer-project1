@@ -1,12 +1,17 @@
-body {
+
+html,body {
+  height: 100%;
+
   margin: 0;
 }
 
+
+.body-details-page{
+  background-color: var(--light-mode-bg_body);
+
+}
 .section-details-page {
   height: fit-content;
-
-  height: 100vh;
-  background-color: var(--light-mode-bg_body);
 }
 
 .flex-table-info-footer-details {
@@ -37,7 +42,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding-top: 2px;
-  height: 210px;
+  height: 200px;
 }
 
 .div-topic-text-topic-details {
@@ -135,7 +140,7 @@ body {
   background-color: var(--light-mode-bg_default);
   width: 535px;
   border-radius: 5px;
-  height: 290px;
+  height: 360px;
 }
 
 .div-row-info-elemnt-details,
@@ -153,7 +158,7 @@ body {
   display: flex;
   gap: 12px;
   padding-left: 20px;
-  height: 40px;
+  height: 50px;
   background-color: transparent;
   align-items: center;
 }
@@ -210,6 +215,7 @@ body {
 }
 
 .section-footer {
+  margin-bottom: 70px;
   margin-top: 15px;
   height: fit-content;
   margin-right: unset;
