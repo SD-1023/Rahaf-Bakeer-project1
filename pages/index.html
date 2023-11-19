@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+
+        </title>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" type="text/css" href="../css/variables.css">
+        <link rel="stylesheet" type="text/css" href="../css/homePageStyle.css">
+        <link rel="stylesheet" type="text/css" href="../css/responsive.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,400;6..12,700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+        <header class="website-main-header">
+            <div class="website-main-nav-bar line-content-page">
+                <h1 class="page-main-title">Web Topics</h1>
+                <nav class="page-main-menu-flex-navication">
+                    <a class="main-menu-single-navication"
+                        id="header-navication-dark-mood" href="#"
+                        onclick="ChangeColorMood('button')">
+                        <ion-icon
+                            class="main-menu-icon-single-navication text-color-mood-change"
+                            name="moon-outline"></ion-icon>
+                        <span
+                            class="main-menu-href-navication-text text-color-mood-change"
+                            id="header-href-text-mood">Dark Mode</span>
+                    </a>
+                    <a class="main-menu-single-navication"
+                        id="header-navication-fav" href="#"
+                        onclick="loadContent()">
+                        <ion-icon
+                            class="main-menu-icon-single-navication text-color-mood-change"
+                            name="heart-outline"></ion-icon>
+                        <span
+                            class="main-menu-href-navication-text text-color-mood-change"
+                            id="header-href-text-fav">Favourites</span></a>
+                </nav>
+            </div>
+        </header>
+
+        <section class="contain-welcome-container-page">
+            <section class="container-welcome">
+                <div class="container-welcome-contain-triangles">
+
+                    <div class="shape-triangle-left">
+                    </div>
+                    <div class="shape-triangle-right">
+                    </div>
+                </div>
+                <div class="container-welcome-contain-text">
+                    <h1 class="main-title-welcome-text">
+                        Welcome to our website!
+                    </h1>
+                    <h3
+                        class="main-discritipn-welcome-text text-color-mood-change">
+                        We have a new design that's fresh, modern, and easy to
+                        use.
+                    </h3>
+                </div>
+            </section>
+
+            <section id="page-content"
+                class="container-welcome-container-home-Page-Content">
+
+                <section class="container-homePage line-content-page">
+
+                    <div class="container-search-bar-contents ">
+                        <form class="search-bar-containe-text">
+
+                            <ion-icon
+                                class="srch-bar-icon text-color-mood-change"
+                                name="search-outline"></ion-icon>
+                            <input type="text"
+                                class="search-text-bar text-input-serch-home text-color-mood-change"
+                                id="search-input-text" type="text"
+                                placeholder="Search the website...">
+                        </form>
+                        <div class="div-hr-dividing">
+
+                        </div>
+                        <div class="drop-menu">
+
+                            <div
+                                class="container-select-option-label-container dividing-line-hide"
+                                id="srch-bar-sec-input">
+                                <label
+                                    class="select-container-label text-color-mood-change">Sort
+                                    by:</label>
+
+                                <select
+                                    class="serch-bar-option-selector text-color-mood-change"
+                                    id="sort-selector-serch-bar"
+                                    name="sort">
+                                    <option value="default">Default</option>
+
+                                </select>
+
+                            </div>
+
+                            <div
+                                class="container-select-option-label-container"
+                                id="srch-bar-three-input">
+                                <label
+                                    class="select-container-label text-color-mood-change">Filter
+                                    by:</label>
+
+                                <select
+                                    class="serch-bar-option-selector text-color-mood-change"
+                                    id="filter-selector-serch-bar" name="sort">
+
+                                    <option value="default">Default</option>
+
+                                </select>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <h1 class="topics-title-home-page text-color-mood-change">"24"
+                        Web Topics Found</h1>
+
+                    <section id="container-contain-load-topics"
+                        class="section-flex-topics">
+
+                    </section>
+                </section>
+
+                <section class="container-text-end-page">
+                    <span class="text-container-end-page text-color-mood-change">
+                        Developed with
+                    </span>
+                    <ion-icon class="icon-heart-container-end-page" name="heart"></ion-icon>
+                    <span
+                        class="text-copy-right-container-end-page text-color-mood-change">&copy;</span>
+                    <span
+                        class="text-year-container-end-page text-color-mood-change">
+                        2023</span>
+                </section>
+            </section>
+
+        </section>
+
+        <div class="fav-container" id="fav-container">
+            <div class="fav-topics-container">
+                <h3 class="fav-title text-color-mood-change">My Favourite
+                    Topics</h3>
+                <div id="fav-content-flex-container"
+                    class="container-fav-topics-flex">
+                </div>
+
+            </div>
+        </div>
+
+        <script src="../scripts/script.js">
+        </script>
+        <script src="../scripts/headerScript.js"></script>
+        <script src="../scripts/ScriptFav.js"></script>
+        <script type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    </body>
+
+</html>
