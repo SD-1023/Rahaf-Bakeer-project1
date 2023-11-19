@@ -19,136 +19,144 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <section class="iframe-main-header">
-            <header class="website-main-header">
-                <h4 class="header-title-heading">Web Topics</h4>
-                <nav class="header-flex-nav-href">
-                    <a class="header-href" id="header-href-dark-mood" href="#"
-                        onclick="ChangeColorMood('button')">
-                        <ion-icon
-                            class="header-icon-href text-color-mood-change"
-                            name="moon-outline"></ion-icon>
-                        <span
-                            class="header-href-span-text text-color-mood-change"
-                            id="header-href-span-text-mood">Dark Mode</span>
-                    </a>
-                    <a class="header-href" id="header-href-fav" href="#"
-                        onclick="loadContent()">
-                        <ion-icon
-                            class="header-icon-href text-color-mood-change"
-                            name="heart-outline"></ion-icon>
-                        <span
-                            class="header-href-span-text text-color-mood-change"
-                            id="header-href-span-text-fav">Favourites</span></a>
-                </nav>
-            </header>
 
-            <section class="section-welcome">
-                <div class="section-welcome-div-triangles">
+        <header class="website-main-header line-content-page">
+            <h1 class="page-main-title">Web Topics</h1>
+            <nav class="page-main-menu-flex-navication">
+                <a class="main-menu-single-navication"
+                    id="header-navication-dark-mood" href="#"
+                    onclick="ChangeColorMood('button')">
+                    <ion-icon
+                        class="main-menu-icon-single-navication text-color-mood-change"
+                        name="moon-outline"></ion-icon>
+                    <span
+                        class="main-menu-href-navication-text text-color-mood-change"
+                        id="header-href-text-mood">Dark Mode</span>
+                </a>
+                <a class="main-menu-single-navication"
+                    id="header-navication-fav" href="#"
+                    onclick="loadContent()">
+                    <ion-icon
+                        class="main-menu-icon-single-navication text-color-mood-change"
+                        name="heart-outline"></ion-icon>
+                    <span
+                        class="main-menu-href-navication-text text-color-mood-change"
+                        id="header-href-text-fav">Favourites</span></a>
+            </nav>
+        </header>
 
-                    <div class="div-triangle-left">
+        <section class="contain-welcome-container-page">
+            <section class="container-welcome">
+                <div class="container-welcome-contain-triangles">
+
+                    <div class="shape-triangle-left">
                     </div>
-                    <div class="div-triangle-right">
+                    <div class="shape-triangle-right">
                     </div>
                 </div>
-                <div class="section-welcome-div-text">
-                    <h1 class="h1-heading-welcome-text">
+                <div class="container-welcome-contain-text">
+                    <h1 class="main-title-welcome-text">
                         Welcome to our website!
                     </h1>
-                    <h3 class="h3-heading-welcome-text text-color-mood-change">
+                    <h3
+                        class="main-discritipn-welcome-text text-color-mood-change">
                         We have a new design that's fresh, modern, and easy to
                         use.
                     </h3>
                 </div>
             </section>
-        </section>
 
-        <section id="pageContent" class="sectionPageContent">
+            <section id="page-content"
+                class="container-welcome-container-home-Page-Content">
 
-            <section class="section-homePage ">
+                <section class="container-homePage line-content-page">
 
-                <div class="iframe-serchbar" id="iframe-search-bar-content">
-                    <div class="div-search-inputs">
-                        <form class="first-input-form">
+                    <div class="container-search-bar-contents ">
+                        <form class="search-bar-containe-text">
 
                             <ion-icon
                                 class="srch-bar-icon text-color-mood-change"
                                 name="search-outline"></ion-icon>
-                            <input class="search-bar input-serch-home text-color-mood-change"
+                            <input type="text"
+                                class="search-text-bar text-input-serch-home text-color-mood-change"
                                 id="search-input-text" type="text"
                                 placeholder="Search the website...">
                         </form>
                         <div class="div-hr-dividing">
 
                         </div>
-                        <div
-                            class="srch-bar-sec-input div-select-label-container">
-                            <span class="select-label text-color-mood-change">Sort
-                                by:</span>
+                        <div class="drop-menu">
 
-                            <select
-                                class="selector-serch-bar text-color-mood-change"
-                                id="sort-selector-serch-bar"
-                                name="sort">
-                                <option value="default">Default</option>
+                            <div
+                                class="container-select-option-label-container dividing-line-hide"
+                                id="srch-bar-sec-input">
+                                <label
+                                    class="select-container-label text-color-mood-change">Sort
+                                    by:</label>
 
-                            </select>
+                                <select
+                                    class="serch-bar-option-selector text-color-mood-change"
+                                    id="sort-selector-serch-bar"
+                                    name="sort">
+                                    <option value="default">Default</option>
 
-                            <div class="div-dividing div-dividing-hide">
-                                <div class="div-vl-dividing"></div>
+                                </select>
 
                             </div>
-                        </div>
 
-                        <div
-                            class="srch-bar-three-input div-select-label-container">
-                            <span class="select-label text-color-mood-change">Filter
-                                by:</span>
+                            <div
+                                class="container-select-option-label-container"
+                                id="srch-bar-three-input">
+                                <label
+                                    class="select-container-label text-color-mood-change">Filter
+                                    by:</label>
 
-                            <select
-                                class="selector-serch-bar text-color-mood-change"
-                                id="filter-selector-serch-bar" name="sort">
+                                <select
+                                    class="serch-bar-option-selector text-color-mood-change"
+                                    id="filter-selector-serch-bar" name="sort">
 
-                                <option value="default">Default</option>
+                                    <option value="default">Default</option>
 
-                            </select>
-
-                            <div class="div-dividing">
-
-                                <div class="div-vl-dividing"></div>
+                                </select>
 
                             </div>
                         </div>
 
                     </div>
-                </div>
-                <h1 class="h1-topics-title-home-page text-color-mood-change">"24"
-                    Web Topics Found</h1>
+                    <h1 class="topics-title-home-page text-color-mood-change">"24"
+                        Web Topics Found</h1>
 
-                <section id="section-load-topics" class="section-flex-topics">
+                    <section id="container-contain-load-topics"
+                        class="section-flex-topics">
 
+                    </section>
+                </section>
+
+                <section class="container-text-end-page">
+                    <span class="text-container-end-page text-color-mood-change">
+                        Developed with
+                    </span>
+                    <ion-icon class="icon-heart-container-end-page" name="heart"></ion-icon>
+                    <span
+                        class="text-copy-right-container-end-page text-color-mood-change">&copy;</span>
+                    <span
+                        class="text-year-container-end-page text-color-mood-change">
+                        2023</span>
                 </section>
             </section>
 
-            <section class="section-footer">
-                <span class="span-text-footer text-color-mood-change">
-                    Developed with
-                </span>
-                <ion-icon class="icon-heart-footer" name="heart"></ion-icon>
-                <span class="span-copy-footer text-color-mood-change">&copy;</span>
-                <span class="span-year-footer text-color-mood-change"> 2023</span>
-            </section>
         </section>
 
-        <section class="fav-section iframe-fav" id="iframe-fav-container">
-            <div class="div-fav-section">
-                <h3 class="h5-fav-title text-color-mood-change">My Favourite
+        <div class="fav-container" id="fav-container">
+            <div class="fav-topics-container">
+                <h3 class="fav-title text-color-mood-change">My Favourite
                     Topics</h3>
-                <div id="dev-fav-content-display-flex" class="div-fav-flex">
+                <div id="fav-content-flex-container"
+                    class="container-fav-topics-flex">
                 </div>
 
             </div>
-        </section>
+        </div>
 
         <script src="script.js">
         </script>

@@ -6,12 +6,12 @@ let favData = [
   },
   {
     imgSrc: "./assets/imges/cloud.jpeg",
-    title: "Web Development Concepts and T...",
+    title: "Cloud Computing",
     rating: "4",
   },
 ];
 
-let divFav = document.getElementById("dev-fav-content-display-flex");
+let divFav = document.getElementById("fav-content-flex-container");
 
 for (let i = 0; i < favData.length; i++) {
   let newTopicElement = document.createElement("div");
@@ -21,7 +21,7 @@ for (let i = 0; i < favData.length; i++) {
   let infoContainer = document.createElement("div");
   infoContainer.className = "div-fav-topic-info";
   let topicTitle = document.createElement("h5");
-  topicTitle.className = "fav-topic-name text-color-mood-change";
+  topicTitle.className = "fav-topic-name text-over-flow-handler text-color-mood-change";
 
   let topicRatingContainer = document.createElement("div");
   topicRatingContainer.className = "div-fav-rating-single-topic";
@@ -50,6 +50,8 @@ for (let i = 0; i < favData.length; i++) {
   divFav.appendChild(newTopicElement);
 }
 
+
+/*
 
 let textLightColor = "var( --light-mode-body-text) ";
   let textDarkColor = "var(--dark-mode-body-text) ";
@@ -94,3 +96,4 @@ if (
     }
   }
 }
+*/
