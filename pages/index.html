@@ -6,10 +6,10 @@
         <title>
 
         </title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" type="text/css" href="variables.css">
-        <link rel="stylesheet" type="text/css" href="homePageStyle.css">
-        <link rel="stylesheet" type="text/css" href="responsive.css">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" type="text/css" href="../css/variables.css">
+        <link rel="stylesheet" type="text/css" href="../css/homePageStyle.css">
+        <link rel="stylesheet" type="text/css" href="../css/responsive.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
@@ -20,29 +20,31 @@
     </head>
     <body>
 
-        <header class="website-main-header line-content-page">
-            <h1 class="page-main-title">Web Topics</h1>
-            <nav class="page-main-menu-flex-navication">
-                <a class="main-menu-single-navication"
-                    id="header-navication-dark-mood" href="#"
-                    onclick="ChangeColorMood('button')">
-                    <ion-icon
-                        class="main-menu-icon-single-navication text-color-mood-change"
-                        name="moon-outline"></ion-icon>
-                    <span
-                        class="main-menu-href-navication-text text-color-mood-change"
-                        id="header-href-text-mood">Dark Mode</span>
-                </a>
-                <a class="main-menu-single-navication"
-                    id="header-navication-fav" href="#"
-                    onclick="loadContent()">
-                    <ion-icon
-                        class="main-menu-icon-single-navication text-color-mood-change"
-                        name="heart-outline"></ion-icon>
-                    <span
-                        class="main-menu-href-navication-text text-color-mood-change"
-                        id="header-href-text-fav">Favourites</span></a>
-            </nav>
+        <header class="website-main-header">
+            <div class="website-main-nav-bar line-content-page">
+                <h1 class="page-main-title">Web Topics</h1>
+                <nav class="page-main-menu-flex-navication">
+                    <a class="main-menu-single-navication"
+                        id="header-navication-dark-mood" href="#"
+                        onclick="ChangeColorMood('button')">
+                        <ion-icon
+                            class="main-menu-icon-single-navication text-color-mood-change"
+                            name="moon-outline"></ion-icon>
+                        <span
+                            class="main-menu-href-navication-text text-color-mood-change"
+                            id="header-href-text-mood">Dark Mode</span>
+                    </a>
+                    <a class="main-menu-single-navication"
+                        id="header-navication-fav" href="#"
+                        onclick="loadContent()">
+                        <ion-icon
+                            class="main-menu-icon-single-navication text-color-mood-change"
+                            name="heart-outline"></ion-icon>
+                        <span
+                            class="main-menu-href-navication-text text-color-mood-change"
+                            id="header-href-text-fav">Favourites</span></a>
+                </nav>
+            </div>
         </header>
 
         <section class="contain-welcome-container-page">
@@ -158,10 +160,10 @@
             </div>
         </div>
 
-        <script src="script.js">
+        <script src="../scripts/script.js">
         </script>
-        <script src="headerScript.js"></script>
-        <script src="ScriptFav.js"></script>
+        <script src="../scripts/headerScript.js"></script>
+        <script src="../scripts/ScriptFav.js"></script>
         <script type="module"
             src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule

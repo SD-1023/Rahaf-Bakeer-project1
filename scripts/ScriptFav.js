@@ -1,11 +1,11 @@
 let favData = [
   {
-    imgSrc: "./assets/imges/react.webp",
+    imgSrc: "../assets/imges/react.webp",
     title: "React",
     rating: "4",
   },
   {
-    imgSrc: "./assets/imges/cloud.jpeg",
+    imgSrc: "../assets/imges/cloud.jpeg",
     title: "Cloud Computing",
     rating: "4",
   },
@@ -21,7 +21,8 @@ for (let i = 0; i < favData.length; i++) {
   let infoContainer = document.createElement("div");
   infoContainer.className = "div-fav-topic-info";
   let topicTitle = document.createElement("h5");
-  topicTitle.className = "fav-topic-name text-over-flow-handler text-color-mood-change";
+  topicTitle.className =
+    "fav-topic-name text-over-flow-handler text-color-mood-change";
 
   let topicRatingContainer = document.createElement("div");
   topicRatingContainer.className = "div-fav-rating-single-topic";
@@ -49,7 +50,6 @@ for (let i = 0; i < favData.length; i++) {
   newTopicElement.appendChild(infoContainer);
   divFav.appendChild(newTopicElement);
 }
-
 
 /*
 

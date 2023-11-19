@@ -1,10 +1,4 @@
 @media (max-width: 1000px) {
-  .container-float-component {
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    position: unset;
-  }
   .container-single-topic-details {
     background: transparent;
     height: fit-content;
@@ -12,8 +6,11 @@
     padding: 0;
   }
 
-  .container-flex-table-footer {
+  .container-table {
+    padding-top: 48px;
     margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
   .container-topic-text-topic-details,
   .container-sub-side-info-topic-details {
@@ -23,29 +20,41 @@
 
   .container-sub-side-info-topic-details {
     margin-top: 50px;
-    height: 360px;
     position: unset;
   }
 
   .container-text-info-details-info-details {
+    position: unset;
+    width: 100%;
+    gap: 3rem;
+    display: flex;
     flex-direction: column-reverse;
+    align-items: center;
   }
   .container-text-info-table-info-details {
     gap: 15px;
   }
+
+  .inline-margin-content {
+    width: 100%;
+    min-width: unset;
+    max-width: 100vw;
+  }
+
   .container-topic-text-topic-details {
     text-align: center;
-    background-color: var(--body-text);
+    background-color: #333333;
     width: 100%;
-    height: fit-content;
+    margin: 0;
   }
 
   .background-image-topic-details {
     height: unset;
   }
   .container-topic-text-topic-details > * {
-    margin-left: 50px;
-    margin-right: 50px;
+    width: 530px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .paragraph-topic-info-details {
@@ -116,7 +125,7 @@
     width: 100%;
   }
 
-  .container-flex-table-footer {
+  .container-table {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
@@ -149,6 +158,7 @@
   .container-single-topic {
     position: relative;
     width: 100%;
+    height: 305px;
   }
 
   .background-single-topic {
@@ -168,6 +178,11 @@
     bottom: 5px;
     left: 0;
     width: 100%;
+  }
+
+  .container-info-single-topic > * {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .fav-container {
@@ -240,13 +255,17 @@
   .div-fav-topic {
     width: 150px;
   }
-  .container-table-info-details {
+  .table-info-details {
     width: 100%;
   }
 
   .drop-menu {
     width: 100%;
     height: 50px;
+  }
+
+  .container-topic-text-topic-details > * {
+    width: fit-content;
   }
 }
 
