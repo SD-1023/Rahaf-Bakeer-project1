@@ -1,16 +1,21 @@
-
-html,body {
+html,
+body {
   height: 100%;
 
   margin: 0;
 }
 
+.inline-margin-content {
+  margin-inline: auto;
 
-.body-details-page{
-  background-color: var(--light-mode-bg_body);
-
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
-.section-details-page {
+.continer-details-page-info-with-background {
+  background-color: var(--bg_body);
+}
+.container-details-page {
   height: fit-content;
 }
 
@@ -19,166 +24,199 @@ html,body {
   gap: 10%;
   flex-direction: column;
 }
-.section-topic-details {
+.container-single-topic-details {
   max-width: 100vw;
-  background-color: var(--light-mode-body-text);
-  height: 285px;
+  background-color: #333333;
+
+  padding: 30px 0;
+}
+
+.container-text-info-details-info-details {
   display: flex;
-  justify-content: center;
-  gap: 30px;
+  flex-direction: row;
+  gap: 2rem;
 }
-.div-img-btn-topic-details {
+.container-sub-side-info-topic-details {
   width: 290px;
-  height: 410px;
-  box-shadow: 0px 0px 5px 1px var(--dark-mode-lines-color);
 
-  background-color: var(--light-mode-bg_default);
-  margin-top: 30px;
+  box-shadow: 0px 0px 3px 2px #00000029;
+  background-color: #ffffff;
+  position: absolute;
+  padding-bottom: 15px;
 }
 
-.img-topic-details {
-  width: 99%;
+.background-image-topic-details {
+  width: 98.9%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 2px;
+  padding-top: 1.5px;
   height: 200px;
+  object-fit: fill;
 }
 
-.div-topic-text-topic-details {
-  margin-top: 25px;
-  height: 200px;
+.contaniner-algin-item {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
 
-  width: 535px;
+.details-sub-fav-info-align {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-float-component {
+  position: relative;
+  width: 290px;
+}
+.container-topic-text-topic-details {
+  height: fit-content;
+  width: 530px;
 }
 
 .light-text-details {
-  color: var(--dark-mode-body-text);
+  color: #ededed;
 }
-.h2-text-topic-title {
+.text-topic-title {
   font-weight: 700;
 }
 
-.p-topic-info-details {
+.paragraph-topic-info-details {
   font-weight: 400;
   font-size: 15px;
   font-size: medium;
+  margin-bottom: 0;
+  margin-top: 20px;
 }
 
-.h5-text-type-topic-details {
+.text-type-topic-details {
   color: var(--brand-secondary);
   font-weight: 400;
   font-size: 20px;
 }
 
-.div-details-topic-rating-single-topic {
+.container-details-topic-rating-single-topic {
   font-size: 13px;
   color: orange;
 }
 
-.div-btn-text-details {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  border: 1px solid var(--light-mode-lines-color);
+.container-naviaction-text-details {
+  gap: 7px;
+  border: 1px solid #dddddd;
   padding-top: 10px;
   padding-bottom: 10px;
-  height: 110px;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  color: #333333;
 }
 
-.btn-img-heart-details {
+.navication-container-img-heart-details {
   color: white;
-  font-size: 25px;
+  font-size: 26px;
 }
 
-.btn-add-fav-topic-details {
+.navication-container-add-fav-topic-details {
   display: flex;
   background-color: var(--brand-secondary);
   align-items: center;
   justify-content: center;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+
   border: none;
   height: 45px;
   gap: 10px;
+  font-size: 18px;
+  height: fit-content;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  flex-wrap: wrap;
 }
 
-.span-text-btn-add-fav-topic-details {
+.span-text-text-btn-add-fav-topic-details {
   font-size: medium;
   font-weight: 400;
 }
 
-.h5-title-single-topics-details {
+.title-single-topics-details {
   font-weight: 700;
   font-size: 15px;
+  max-width: 100%;
 }
 
-.span-text-extra-details {
+.text-extra-details {
   font-size: 15px;
+  max-width: 100%;
   font-weight: 400;
 }
 
-.div-title-author-topics-details-flex {
+.container-title-author-topics-details-flex {
   display: flex;
   gap: 5px;
   margin-top: 20px;
   margin-bottom: 10px;
   margin-left: 15px;
+  flex-wrap: wrap;
 }
 
-.span-text-author-details {
+.text-author-details {
   color: var(--brand-primary);
   text-decoration: underline;
+  max-width: 100%;
 }
 
-.section-table-info-details {
-  background-color: var(--light-mode-bg_default);
-  width: 535px;
+.container-table-info-details {
+  background-color: var(--bg_default);
+  width: 530px;
   border-radius: 5px;
   height: fit-content;
 }
 
-.h5-cridits-text-extra-details{
+.cridits-text-extra-details {
   font-weight: 200;
+  text-align: center;
+  font-size: 13px;
 }
 
-.div-row-info-elemnt-details,
-.section-table-info-details {
-  border: 1px solid var(--light-mode-lines-color);
+.container-row-info-elemnt-details,
+.container-table-info-details {
+  border: 1px solid var(--lines-color);
 }
 
-.div-row-info-first-elemnt-details {
+.container-row-info-first-elemnt-details {
   border-radius: 4px 4px 0 0;
 }
 .div-row-info-last-elemnt-details {
   border-radius: 0 0 4px 4px;
 }
-.div-row-info-elemnt-details {
+.container-row-info-elemnt-details {
   display: flex;
   gap: 12px;
+  padding: 15px 0;
   padding-left: 20px;
-  height: 50px;
+  height: fit-content;
   background-color: transparent;
   align-items: center;
 }
 
-.h1-title-info-row-table-details {
+.title-info-row-table-details {
   font-size: large;
   font-weight: 700;
   margin-top: auto;
   margin-bottom: auto;
 }
 
-.h4-info-row-table-details {
+.row-info-row-table-details {
   font-weight: 400;
+  width: 90%;
+}
+.container-welcome {
+  padding: 1px;
 }
 
-.div-text-info-table-info-details {
+.container-text-info-table-info-details {
   display: flex;
   flex-direction: column;
   gap: 70px;
@@ -191,13 +229,15 @@ html,body {
   color: var(--brand-secondary);
 }
 
-.div-flex-table-footer {
+.container-flex-table-footer {
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   height: fit-content;
+  width: 530px;
 }
 
-.header-href {
+.main-menu-single-navication {
   line-height: 30px;
 }
 
@@ -209,19 +249,18 @@ html,body {
   height: 10.5rem;
 }
 
-.section-topic-details {
-  height: 270px;
-}
-
-.h2-text-topic-title,
-.h5-text-type-topic-details {
+.text-topic-title,
+.text-type-topic-details {
   font-size: 20px;
 }
 
-.section-footer {
+.container-text-end-page {
   margin-bottom: 70px;
   margin-top: 15px;
   height: fit-content;
-  margin-right: unset;
   margin-left: auto;
+  margin-right: unset;
+  flex-wrap: wrap;
+  width: fit-content;
+  max-width: 100%;
 }

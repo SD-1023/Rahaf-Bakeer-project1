@@ -1,41 +1,57 @@
-@media (max-width: 915px) {
-  .section-topic-details {
+@media (max-width: 1000px) {
+  .container-float-component {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    position: unset;
+  }
+  .container-single-topic-details {
     background: transparent;
     height: fit-content;
     flex-direction: column-reverse;
+    padding: 0;
   }
-  .div-topic-text-topic-details,
-  .div-img-btn-topic-details {
+
+  .container-flex-table-footer {
+    margin-top: 0;
+  }
+  .container-topic-text-topic-details,
+  .container-sub-side-info-topic-details {
     margin-left: auto;
     margin-right: auto;
   }
 
-  .div-img-btn-topic-details {
+  .container-sub-side-info-topic-details {
     margin-top: 50px;
     height: 360px;
+    position: unset;
   }
 
-  .div-text-info-table-info-details {
+  .container-text-info-details-info-details {
+    flex-direction: column-reverse;
+  }
+  .container-text-info-table-info-details {
     gap: 15px;
   }
-  .div-topic-text-topic-details {
-    background-color: var(--light-mode-body-text);
+  .container-topic-text-topic-details {
+    text-align: center;
+    background-color: var(--body-text);
     width: 100%;
     height: fit-content;
   }
 
-  .img-topic-details {
+  .background-image-topic-details {
     height: unset;
   }
-  .div-topic-text-topic-details > * {
+  .container-topic-text-topic-details > * {
     margin-left: 50px;
     margin-right: 50px;
   }
 
-  .p-topic-info-details {
+  .paragraph-topic-info-details {
     padding-bottom: 30px;
   }
-  .h5-text-type-topic-details {
+  .text-type-topic-details {
     padding-top: 30px;
   }
 
@@ -44,33 +60,32 @@
     margin-right: auto;
     margin-top: 30px;
   }
-  .section-details-page {
+  .container-details-page {
     height: 100%;
   }
 
-  .section-footer-details {
+  .container-text-end-page-details {
     margin-right: auto;
   }
-  
 }
 
 @media (max-width: 600px) {
-  .header-href {
+  .main-menu-single-navication {
     padding: 1px 1rem;
   }
 
-  .header-href-span-text {
+  .main-menu-href-navication-text {
     display: none;
   }
 
-  .website-main-header {
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
+  .line-content-page {
+    width: 85vw;
   }
-
-  .section-welcome-div-text {
-    margin-top: 2.5rem;
-    margin-left: 1.5rem;
+  .container-welcome-contain-text {
+    margin-top: 3.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85vw;
   }
 
   .div-triangle-right {
@@ -81,40 +96,46 @@
     clip-path: polygon(0% 0%, 100% 40%, 100% 0%);
   }
 
-  .div-search-inputs,
-  .iframe-serchbar {
-    height: 95px !important;
+  .container-search-bar-contents {
+    height: fit-content;
   }
 
-  .srch-bar-sec-input,
-  .srch-bar-three-input {
-    width: 50% !important;
+  .search-bar-containe-text {
+    width: 100%;
   }
 
-  .first-input-form {
-    width: 100% !important;
-  }
-
-  .search-bar {
-    border-radius: 10px 10px 0 0 !important;
+  .search-text-bar {
+    border-radius: 10px 10px 0 0;
   }
 
   #filter-selector-serch-bar {
     border-radius: 0 0 10px 0;
   }
 
+  .container-text-info-details-info-details {
+    width: 100%;
+  }
+
+  .container-flex-table-footer {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   #sort-selector-serch-bar {
     border-radius: 0 0 0 10px;
   }
 
-  .div-dividing-hide {
-    display: none;
+  .dividing-line-hide {
+    border-left: none;
   }
 
+  #srch-bar-sec-input {
+    border-radius: 0px 0px 0px 10px;
+  }
   .div-hr-dividing {
     display: block !important;
     width: 100%;
-    border-bottom: 2px solid var(--light-mode-lines-color);
+    border-bottom: 2px solid var(--lines-color);
   }
 
   .iframe-serchbar {
@@ -125,15 +146,12 @@
     justify-content: center;
   }
 
-  .div-single-topic {
+  .container-single-topic {
+    position: relative;
     width: 100%;
   }
 
-  .div-single-topic {
-    position: relative;
-  }
-
-  .img-single-topic {
+  .background-single-topic {
     position: absolute;
     height: 150px;
     bottom: 0;
@@ -144,7 +162,7 @@
     object-fit: cover;
   }
 
-  .div-info-single-topic {
+  .container-info-single-topic {
     height: fit-content;
     position: absolute;
     bottom: 5px;
@@ -152,29 +170,28 @@
     width: 100%;
   }
 
-  .div-info-single-topic > * {
-    margin-left: 10px;
-  }
+  .fav-container {
+    padding-bottom: 12px;
+    overflow-y: hidden;
 
-  .fav-section {
     width: 100%;
     white-space: nowrap;
     overflow-x: auto;
   }
 
-  .div-rating-single-topic {
-    margin-top: 36px;
+  .container-rating-single-topic {
+    margin-top: 25px;
   }
 
-  .h3-title-single-topic {
+  .title-single-topic {
     height: fit-content;
   }
 
-  .section-topic-details {
-    gap: 15px !important;
+  .container-single-topic-details {
+    gap: 15px;
     background-color: transparent;
   }
-  .div-topic-text-topic-details {
+  .container-topic-text-topic-details {
     display: flex;
 
     flex-direction: column;
@@ -183,7 +200,7 @@
     height: fit-content;
   }
 
-  .p-topic-info-details {
+  .paragraph-topic-info-details {
     width: fit-content;
     text-align: center;
     margin-right: 20px;
@@ -191,7 +208,7 @@
     margin-bottom: 25px;
   }
 
-  .h5-text-type-topic-details {
+  .text-type-topic-details {
     margin-top: 25px;
     font-size: 18px;
   }
@@ -200,20 +217,19 @@
     width: 90%;
   }
 
-  .div-img-btn-topic-details {
-    width: 90%;
+  .container-sub-side-info-topic-details {
+    width: 70%;
     height: fit-content;
   }
 
-  .div-btn-text-details{
-margin-bottom: 25px;
+  .container-naviaction {
+    margin-bottom: 25px;
   }
-  .section-footer-details {
-    /* margin-right: auto; */
+  .container-text-end-page-details {
     margin-bottom: 15px;
   }
 
-  .h4-info-row-table-details {
+  .row-info-row-table-details {
     font-size: 0.8em;
   }
 
@@ -222,12 +238,20 @@ margin-bottom: 25px;
   }
 
   .div-fav-topic {
-    width: 175px;
+    width: 150px;
+  }
+  .container-table-info-details {
+    width: 100%;
+  }
+
+  .drop-menu {
+    width: 100%;
+    height: 50px;
   }
 }
 
 @media (max-width: 700px) and (min-width: 600px) {
-  .selector-serch-bar {
+  .serch-bar-option-selector {
     padding-left: 12px;
     padding-right: 10px;
     background-position: right 0.5rem bottom 0.5rem;

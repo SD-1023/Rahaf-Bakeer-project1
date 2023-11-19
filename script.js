@@ -274,38 +274,38 @@ topicsData = [
   },
 ];
 
-let section = document.getElementById("section-load-topics");
+let section = document.getElementById("container-contain-load-topics");
 
 for (let i = 0; i < topicsData.length; i++) {
   let newTopicElement = document.createElement("div");
-  newTopicElement.className = "div-single-topic";
+  newTopicElement.className = "container-single-topic";
   let topicImg = document.createElement("img");
-  topicImg.className = "img-single-topic";
+  topicImg.className = "background-single-topic";
   let infoContainer = document.createElement("div");
-  infoContainer.className = "div-info-single-topic";
+  infoContainer.className = "container-info-single-topic";
   let topicDescription = document.createElement("h5");
-  topicDescription.className = "h5-disc-single-topic text-color-mood-change";
+  topicDescription.className = "description-single-topic text-color-mood-change text-over-flow-handler";
   let topicTitle = document.createElement("h3");
-  topicTitle.className = "h3-title-single-topic text-color-mood-change";
+  topicTitle.className = "title-single-topic text-color-mood-change text-over-flow-handler";
   let topicRatingContainer = document.createElement("div");
-  topicRatingContainer.className = "div-rating-single-topic";
+  topicRatingContainer.className = "container-rating-single-topic";
 
   let topicAuthor = document.createElement("h5");
-  topicAuthor.className = "h5-author-single-topics text-color-mood-change";
+  topicAuthor.className = "author-single-topics text-color-mood-change";
 
   newTopicElement.id =
-    "div-single-topic" + topicsData[i]["title"].split(" ")[0];
-  topicImg.id = "img-single-topic" + topicsData[i]["title"].split(" ")[0];
+    "container-single-topic" + topicsData[i]["title"].split(" ")[0];
+  topicImg.id = "background-single-topic" + topicsData[i]["title"].split(" ")[0];
   infoContainer.id =
-    "div-info-single-topic" + topicsData[i]["title"].split(" ")[0];
+    "container-info-single-topic" + topicsData[i]["title"].split(" ")[0];
   topicDescription.id =
-    "h5-disc-single-topic" + topicsData[i]["title"].split(" ")[0];
+    "description-single-topic" + topicsData[i]["title"].split(" ")[0];
   topicTitle.id =
-    "h3-title-single-topic" + topicsData[i]["title"].split(" ")[0];
+    "title-single-topic" + topicsData[i]["title"].split(" ")[0];
   topicRatingContainer.id =
-    "div-rating-single-topic" + topicsData[i]["title"].split(" ")[0];
+    "container-rating-single-topic" + topicsData[i]["title"].split(" ")[0];
   topicAuthor.id =
-    "h5-author-single-topics" + topicsData[i]["title"].split(" ")[0];
+    "author-single-topics" + topicsData[i]["title"].split(" ")[0];
 
   topicImg.src = topicsData[i]["imgSrc"];
   topicImg.alt = topicsData[i]["title"].split(" ")[0] + " img";
