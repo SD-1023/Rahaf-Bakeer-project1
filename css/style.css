@@ -3,15 +3,22 @@ body {
   background-color: var(--bg_default);
 }
 
+* {
+  font-family: var(--font-family-Nunito-Sans);
+  box-sizing: border-box;
+}
 .website-main-header {
-  display: flex;
   height: 75px;
-  margin-left: 60px;
-  margin-right: 60px;
+  position: sticky;
+}
+
+.website-main-nav-bar {
+  display: flex;
+  background-color: var(--bg_default);
+  height: 100%;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  position: sticky;
 }
 
 .text-color-mood-change {
@@ -116,11 +123,15 @@ h6 {
 }
 
 .container-welcome-contain-text {
-  margin-bottom: 20px;
+  padding-bottom: 20px;
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2.8rem;
+}
+
+.container-welcome {
+  background-color: var(--bg_default);
 }
 
 .main-title-welcome-text {
@@ -167,7 +178,8 @@ iframe {
   gap: 5px;
   margin-right: auto;
   margin-left: auto;
-  max-width: 20%;
+  max-width: 80%;
+  flex-wrap: wrap;
 }
 
 .footer-img-heart-icon {

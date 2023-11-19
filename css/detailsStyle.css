@@ -5,18 +5,20 @@ body {
   margin: 0;
 }
 
+.details-page {
+  background-color: var(--bg_body);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 .inline-margin-content {
   margin-inline: auto;
 
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.continer-details-page-info-with-background {
-  background-color: var(--bg_body);
-}
-.container-details-page {
-  height: fit-content;
+  width: 50%;
+  min-width: 855px;
 }
 
 .flex-table-info-footer-details {
@@ -32,13 +34,12 @@ body {
 }
 
 .container-text-info-details-info-details {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
+  position: relative;
 }
 .container-sub-side-info-topic-details {
   width: 290px;
-
+  top: 0;
+  right: 0;
   box-shadow: 0px 0px 3px 2px #00000029;
   background-color: #ffffff;
   position: absolute;
@@ -67,10 +68,6 @@ body {
   margin-right: auto;
 }
 
-.container-float-component {
-  position: relative;
-  width: 290px;
-}
 .container-topic-text-topic-details {
   height: fit-content;
   width: 530px;
@@ -167,11 +164,14 @@ body {
   max-width: 100%;
 }
 
-.container-table-info-details {
+.table-info-details {
   background-color: var(--bg_default);
   width: 530px;
   border-radius: 5px;
   height: fit-content;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-right-style: solid;
 }
 
 .cridits-text-extra-details {
@@ -180,9 +180,13 @@ body {
   font-size: 13px;
 }
 
-.container-row-info-elemnt-details,
-.container-table-info-details {
-  border: 1px solid var(--lines-color);
+.table-info-details,
+.table-info-details > * {
+  border-color: var(--lines-color);
+  border-width: 1px;
+}
+.container-row-info-elemnt-details {
+  border-top-style: solid;
 }
 
 .container-row-info-first-elemnt-details {
@@ -212,9 +216,6 @@ body {
   font-weight: 400;
   width: 90%;
 }
-.container-welcome {
-  padding: 1px;
-}
 
 .container-text-info-table-info-details {
   display: flex;
@@ -229,9 +230,8 @@ body {
   color: var(--brand-secondary);
 }
 
-.container-flex-table-footer {
+.container-table {
   margin-top: 30px;
-  display: flex;
   flex-direction: column;
   height: fit-content;
   width: 530px;
@@ -243,6 +243,7 @@ body {
 
 .website-main-header {
   height: 60px;
+  background-color: var(--bg_default);
 }
 
 .iframe-main-header {
@@ -255,11 +256,11 @@ body {
 }
 
 .container-text-end-page {
-  margin-bottom: 70px;
-  margin-top: 15px;
+  padding-bottom: 70px;
+  margin-top: 25px;
   height: fit-content;
   margin-left: auto;
-  margin-right: unset;
+  margin-right: auto;
   flex-wrap: wrap;
   width: fit-content;
   max-width: 100%;
