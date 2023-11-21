@@ -237,7 +237,9 @@
     font-size: 0.8em;
   }
 
-
+  .navication-container-add-fav-topic-details{
+    font-size: 15px;
+  }
 
   .fav-topic {
     width: 150px;
