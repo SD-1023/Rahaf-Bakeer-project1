@@ -26,10 +26,6 @@ input::placeholder {
   margin-right: auto;
 }
 
-.iframe-content-section-display {
-  padding-right: 16px;
-}
-
 /*****Search Bar Style******/
 
 .container-search-bar-contents {
@@ -41,7 +37,6 @@ input::placeholder {
   gap: 0;
   justify-content: flex-start;
   align-items: center;
-  flex-wrap: wrap;
   box-shadow: 0px 0px 5px 1px var(--shadow);
   background-color: var(--bg_default);
 }
@@ -90,13 +85,12 @@ select:focus-visible {
 }
 
 .container-select-option-label-container {
-  display: flex;
   display: inline-block;
   width: 100%;
   height: 100%;
   padding-left: 15px;
   padding-right: 10px;
-  flex-direction: column;
+  overflow: hidden;
   background-color: var(--bg_default);
   border-left: 2px solid var(--lines-color);
 }
@@ -120,20 +114,15 @@ select:focus-visible {
   font-size: 12px;
   pointer-events: none;
   display: block;
-  margin-top: 5px;
+  margin-top: 6px;
+  width: 100%;
 }
 
 #filter-selector-serch-bar {
   border-radius: 0 10px 10px 0;
 }
 
-.div-vl-dividing {
-  width: fit-content;
-  height: 100%;
-  border-left: 2px solid var(--lines-color);
-}
-
-.div-hr-dividing {
+.hr-dividing {
   display: none;
 }
 
@@ -149,11 +138,11 @@ select:focus-visible {
 
 .topics-title-home-page {
   font-weight: 700;
-  margin-top: 15px;
+  margin-top: 20px;
   font-size: 22px;
 }
 
-.section-flex-topics {
+.collection-topics {
   height: 100%;
   margin-top: 30px;
   display: grid;
@@ -186,7 +175,7 @@ select:focus-visible {
 
 .container-info-single-topic {
   overflow: hidden;
-  width: 90%;
+  width: 87%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
@@ -203,6 +192,7 @@ select:focus-visible {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 .title-single-topic {
   font-weight: 700;
   font-size: 1em;
@@ -213,7 +203,12 @@ select:focus-visible {
   margin-top: 20px;
 }
 
-.div-fav-rating-single-topic,
+.container-rating-single-topic > *,
+.fav-rating-single-topic > * {
+  margin-right: 1px;
+}
+
+.fav-rating-single-topic,
 .container-rating-single-topic {
   color: orange;
 }
@@ -221,4 +216,5 @@ select:focus-visible {
 .author-single-topics {
   margin-top: 12px;
   font-weight: 200;
+  font-size: 13px;
 }

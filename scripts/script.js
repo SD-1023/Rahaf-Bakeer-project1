@@ -277,31 +277,34 @@ topicsData = [
 let section = document.getElementById("container-contain-load-topics");
 
 for (let i = 0; i < topicsData.length; i++) {
-  let newTopicElement = document.createElement("div");
+  let newTopicElement = document.createElement("a");
   newTopicElement.className = "container-single-topic";
   let topicImg = document.createElement("img");
   topicImg.className = "background-single-topic";
   let infoContainer = document.createElement("div");
   infoContainer.className = "container-info-single-topic";
-  let topicDescription = document.createElement("h5");
-  topicDescription.className = "description-single-topic text-color-mood-change text-over-flow-handler";
-  let topicTitle = document.createElement("h3");
-  topicTitle.className = "title-single-topic text-color-mood-change text-over-flow-handler";
+  let topicDescription = document.createElement("h2");
+  topicDescription.className =
+    "description-single-topic text-color-mood-change text-over-flow-handler";
+  let topicTitle = document.createElement("h1");
+  topicTitle.className =
+    "title-single-topic text-color-mood-change text-over-flow-handler";
   let topicRatingContainer = document.createElement("div");
   topicRatingContainer.className = "container-rating-single-topic";
 
-  let topicAuthor = document.createElement("h5");
-  topicAuthor.className = "author-single-topics text-color-mood-change text-over-flow-handler" ;
+  let topicAuthor = document.createElement("h3");
+  topicAuthor.className =
+    "author-single-topics text-color-mood-change text-over-flow-handler";
 
   newTopicElement.id =
     "container-single-topic" + topicsData[i]["title"].split(" ")[0];
-  topicImg.id = "background-single-topic" + topicsData[i]["title"].split(" ")[0];
+  topicImg.id =
+    "background-single-topic" + topicsData[i]["title"].split(" ")[0];
   infoContainer.id =
     "container-info-single-topic" + topicsData[i]["title"].split(" ")[0];
   topicDescription.id =
     "description-single-topic" + topicsData[i]["title"].split(" ")[0];
-  topicTitle.id =
-    "title-single-topic" + topicsData[i]["title"].split(" ")[0];
+  topicTitle.id = "title-single-topic" + topicsData[i]["title"].split(" ")[0];
   topicRatingContainer.id =
     "container-rating-single-topic" + topicsData[i]["title"].split(" ")[0];
   topicAuthor.id =
@@ -338,12 +341,10 @@ for (let i = 0; i < topicsData.length; i++) {
   );
   infoContainer.appendChild(topicAuthor);
   newTopicElement.appendChild(infoContainer);
-  newTopicElement.setAttribute("onclick","openDetailsPage();");
+  newTopicElement.setAttribute("href", "./details.html");
   section.appendChild(newTopicElement);
 }
 
-
-
 function openDetailsPage() {
-  window.location.href = 'details.html';
+  window.location.href = "details.html";
 }

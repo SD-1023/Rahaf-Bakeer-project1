@@ -82,7 +82,6 @@ ul {
 
 .paragraph-topic-info-details {
   font-weight: 400;
-  font-size: 15px;
   font-size: medium;
   margin-bottom: 0;
   margin-top: 20px;
@@ -215,6 +214,7 @@ ul {
 .row-info-row-table-details {
   font-weight: 400;
   width: 90%;
+  font-size: 16px;
 }
 
 .container-text-info-table-info-details {
@@ -244,10 +244,6 @@ ul {
 .website-main-header {
   height: 60px;
   background-color: var(--bg_default);
-}
-
-.iframe-main-header {
-  height: 10.5rem;
 }
 
 .text-topic-title,

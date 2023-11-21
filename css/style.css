@@ -25,14 +25,10 @@ body {
   color: var(--body-text);
 }
 
-.iframe-main-header,
 .website-main-header,
 .fav-container,
 .main-menu-single-navication {
   background-color: var(--bg_default);
-}
-.iframe-main-header {
-  height: 12.5rem;
 }
 
 .page-main-menu-flex-navication {
@@ -155,20 +151,6 @@ h6 {
   padding-top: 15px;
 }
 
-.iframe-content-section-display {
-  height: 100vw;
-}
-
-iframe {
-  border: none;
-  width: 100%;
-  display: block;
-}
-
-.iframe-footer {
-  height: 75px;
-  width: 100%;
-}
 .container-text-end-page {
   height: 85px;
   width: fit-content;
@@ -200,29 +182,30 @@ iframe {
 }
 
 .fav-container {
-  height: 200px;
+  height: fit-content;
   width: 100%;
   background-color: var(--bg_default);
-  height: 200px;
+  padding-bottom: 15px;
   z-index: 1000;
-  position: fixed;
+  position: sticky;
   bottom: 0;
   display: none;
 
   transition: transform 0.5s ease-out;
 }
 
-.div-fav-topic {
+.fav-topic {
   width: 160px;
   height: 125px;
   box-shadow: 0px 0px 3px 2px var(--shadow);
-  border-radius: 10px;
+  border-radius: 5px;
 }
-.img-fav {
+.background-fav {
   width: 100%;
   height: 70px;
-  border-radius: 10px 10px 0 0;
+  border-radius: 5px 5px 0 0;
   background-color: var(--bg_default);
+  object-fit: cover;
 }
 
 .fav-topics-container {
@@ -237,14 +220,15 @@ iframe {
   font-size: 20px;
 }
 
-.div-fav-topic-info {
+.fav-topic-info {
   margin-left: 10px;
   overflow: hidden;
   margin-right: 10px;
 }
 
-.fav-topic-name {
+.fav-topic-title {
   font-size: 18px;
+  font-weight: 700;
 }
 
 .text-container-end-page,
