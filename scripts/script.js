@@ -288,7 +288,7 @@ for (let i = 0; i < topicsData.length; i++) {
     "description-single-topic text-color-mood-change text-over-flow-handler";
   let topicTitle = document.createElement("h1");
   topicTitle.className =
-    "title-single-topic text-color-mood-change text-over-flow-handler";
+    "title-single-topic text-color-mood-change";
   let topicRatingContainer = document.createElement("div");
   topicRatingContainer.className = "container-rating-single-topic";
 
