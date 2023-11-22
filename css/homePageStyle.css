@@ -169,7 +169,7 @@ select:focus-visible {
 
 .container-info-single-topic {
   overflow: hidden;
-  padding: 10px 10px 15px 15px;
+  padding: 10px 15px 15px 15px;
   border-radius: 0 0 10px 10px;
 }
 
@@ -208,6 +208,7 @@ select:focus-visible {
 .container-rating-single-topic {
   color: orange;
 }
+
 
 .author-single-topics {
   margin-top: 12px;

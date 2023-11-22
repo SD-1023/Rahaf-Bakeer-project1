@@ -21,6 +21,9 @@ body {
   justify-content: space-between;
 }
 
+.fav-rating-single-topic{
+  font-size: 17px;
+}
 .text-color-mood-change {
   color: var(--body-text);
 }
@@ -195,7 +198,7 @@ h6 {
 }
 
 .fav-topic {
-  width: 160px;
+  width: 130px;
   height: 125px;
   box-shadow: 0px 0px 3px 2px var(--shadow);
   border-radius: 5px;
@@ -221,13 +224,13 @@ h6 {
 }
 
 .fav-topic-info {
-  margin-left: 10px;
+  padding-left: 10px;
   overflow: hidden;
-  margin-right: 10px;
+  padding-right: 10px;
 }
 
 .fav-topic-title {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 700;
 }
 
